@@ -12,6 +12,7 @@ audio.offload.video=true \
 persist.vendor.audio.fluence.speaker=true \
 persist.vendor.audio.fluence.voicecall=true \
 persist.vendor.audio.fluence.voicerec=true \
+ro.config.vc_call_vol_steps=7 \
 persist.vendor.btstack.enable.splita2dp=false \
 ro.af.client_heap_size_kbyte=7168 \
 ro.vendor.audio.sdk.fluencetype=fluence \
