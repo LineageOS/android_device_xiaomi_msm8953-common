@@ -534,7 +534,7 @@ on property:ro.vendor.ril.mbn_copy_completed=1
 service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     class late_start
     user root
-    group root system wakelock
+    group root system wakelock graphics
     disabled
     oneshot
 
