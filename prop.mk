@@ -1,5 +1,5 @@
 #
-# system.prop for mido
+# system.prop for msm8953-common
 #
 
 # Audio

@@ -19,9 +19,9 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_C_INCLUDES := system/core/init
-LOCAL_MODULE := libinit_mido
+LOCAL_MODULE := libinit_msm8953
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := init_mido.cpp
+LOCAL_SRC_FILES := init_msm8953.cpp
 LOCAL_STATIC_LIBRARIES := libbase libselinux
 
 include $(BUILD_STATIC_LIBRARY)
