@@ -279,3 +279,4 @@
 
 # lirc
 /dev/lirc0                0660   system     system
+/dev/peel_ir              0660   system     system
