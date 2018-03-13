@@ -179,7 +179,7 @@ service energy-awareness /system/vendor/bin/energy-awareness
 service hvdcp_opti /system/vendor/bin/hvdcp_opti
     class main
     user root
-    group root
+    group system wakelock
 
 on charger
     write /sys/devices/system/cpu/cpu2/online 0
