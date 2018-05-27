@@ -274,7 +274,7 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-#Power
+# Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service-qti
 
@@ -344,6 +344,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
+
+# VR
+PRODUCT_PACKAGES += \
+    vr.msm8953
+
+PRODUCT_PACKAGES += \
+    android.hardware.vr@1.0-impl \
+    android.hardware.vr@1.0-service
 
 # Whitelisted app
 PRODUCT_COPY_FILES += \
