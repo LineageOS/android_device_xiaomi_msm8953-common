@@ -266,7 +266,20 @@
         </interface>
     </hal>
     <hal format="hidl">
+<<<<<<< HEAD
         <name>com.qualcomm.qti.dpm.api</name>
+=======
+        <name>android.hardware.vr</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IVr</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.wifi</name>
+>>>>>>> 80e4c7ef1... kuntao: Build VR HAL
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
