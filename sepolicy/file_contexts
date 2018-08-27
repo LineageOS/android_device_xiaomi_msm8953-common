@@ -1,3 +1,6 @@
+# Camera
+/data/camera(/.*)?                    u:object_r:camera_socket:s0
+
 # Fpc Fingerprint
 /data/fpc(/.*)?					u:object_r:fpc_data_file:s0
 /dev/socket/fpce(/.*)?				u:object_r:fpce_socket:s0
