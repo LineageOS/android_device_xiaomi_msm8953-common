@@ -52,6 +52,26 @@ $(LOCAL_BUILT_MODULE):
 	$(hide) ln -sf $(ACTUAL_DAT_FILE) $(WCNSS_DAT_SYMLINK)
 	$(hide) touch $@
 
+#A/B builds require us to create the mount points at compile time.
+#Just creating it for all cases since it does not hurt.
+FIRMWARE_MOUNT_POINT := $(TARGET_OUT_VENDOR)/firmware_mnt
+DSP_MOUNT_POINT := $(TARGET_OUT_VENDOR)/dsp
+ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_MOUNT_POINT) \
+				 $(DSP_MOUNT_POINT)
+$(FIRMWARE_MOUNT_POINT):
+	@echo "Creating $(FIRMWARE_MOUNT_POINT)"
+	@mkdir -p $(TARGET_OUT_VENDOR)/firmware_mnt
+ifneq ($(TARGET_MOUNT_POINTS_SYMLINKS),false)
+	@ln -sf /vendor/firmware_mnt $(TARGET_ROOT_OUT)/firmware
+endif
+
+$(DSP_MOUNT_POINT):
+	@echo "Creating $(DSP_MOUNT_POINT)"
+	@mkdir -p $(TARGET_OUT_VENDOR)/dsp
+ifneq ($(TARGET_MOUNT_POINTS_SYMLINKS),false)
+	@ln -sf /vendor/dsp $(TARGET_ROOT_OUT)/dsp
+endif
+
 IMS_LIBS := libimscamera_jni.so libimsmedia_jni.so
 
 IMS_SYMLINKS := $(addprefix $(TARGET_OUT_APPS)/ims/lib/arm64/,$(notdir $(IMS_LIBS)))
