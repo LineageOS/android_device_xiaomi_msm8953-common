@@ -321,7 +321,7 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
