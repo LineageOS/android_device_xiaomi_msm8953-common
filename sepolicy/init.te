@@ -1,0 +1,1 @@
+allow init proc_boot_reason:file r_file_perms;

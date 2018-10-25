@@ -1,5 +1,11 @@
+# Audio
+/data/vendor/misc/audio(/.*)?         u:object_r:vendor_audio_data_file:s0
+
 # Camera
 /data/camera(/.*)?                    u:object_r:camera_socket:s0
+
+# Connectivity
+/data/connectivity(/.*)?              u:object_r:cnd_data_file:s0
 
 # Fpc Fingerprint
 /data/fpc(/.*)?					u:object_r:fpc_data_file:s0
@@ -10,6 +16,12 @@
 /dev/goodix_fp					u:object_r:gx_fpd_device:s0
 /data/gf_data(/.*)?                             u:object_r:gx_fpd_data_file:s0
 /persist/data/gxfp(/.*)?			u:object_r:gx_fpd_data_file:s0
+
+# HALs
+/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.0-service\.widevine         u:object_r:hal_drm_widevine_exec:s0
+
+# Location
+/data/vendor/location/xtra/socket_hal_xtra    u:object_r:location_socket:s0
 
 # Rild
 /(vendor|system/vendor)/radio/qcril_database/qcril.db			u:object_r:rild_file:s0
