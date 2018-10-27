@@ -45,6 +45,10 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
+    # ZRAM setup
+    write /sys/block/zram0/comp_algorithm lz4
+    write /proc/sys/vm/page-cluster 0
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
@@ -580,4 +584,5 @@ service time_daemon /system/vendor/bin/time_daemon
     writepid /dev/cpuset/system-background/tasks
 
 on property:dev.bootcomplete=1
+    swapon_all /fstab.qcom
     setprop sys.io.scheduler "bfq"
