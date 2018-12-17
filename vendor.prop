@@ -163,9 +163,6 @@ persist.timed.enable=true
 # Tcp
 net.tcp.2g_init_rwnd=10
 
-# UI
-sys.use_fifo_ui=1
-
 # Usb
 persist.vendor.usb.config.extra=none
 
