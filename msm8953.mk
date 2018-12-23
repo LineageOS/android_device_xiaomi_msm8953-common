@@ -23,11 +23,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
-    Bluetooth \
-    Settings \
-    SettingsProvider \
-    SystemUI \
-    framework-res \
+    framework-res
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
