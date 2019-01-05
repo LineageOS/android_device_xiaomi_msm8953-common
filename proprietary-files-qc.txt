@@ -33,7 +33,7 @@ vendor/lib/libdrc.so
 vendor/lib/libqtigef.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so|733e30f646b87e4f5ee90baea0ce5e7982d607c9
+vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
@@ -43,7 +43,6 @@ vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
 vendor/lib64/libqtigef.so
 vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcreverb.so|8bdd74d69593cd838e4b92d9b2884e0c4140226f 
 vendor/lib64/soundfx/libqcvirt.so
 
 # ANT+ (vendor)
