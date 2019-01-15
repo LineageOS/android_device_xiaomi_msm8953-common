@@ -1,4 +1,1 @@
 get_prop(system_server, vendor_camera_prop)
-
-allow system_server proc_touchpanel:dir search;
-allow system_server proc_touchpanel:file rw_file_perms;
