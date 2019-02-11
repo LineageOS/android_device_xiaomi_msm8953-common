@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b20ac393_ca492f5f",
+        "filename": "configs/sec_config",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-02-11T20:49:41Z",
+      "side": 1,
+      "message": "I think this was removed deliberately?\nBy us and also by CAF",
+      "range": {
+        "startLine": 17,
+        "startChar": 40,
+        "endLine": 17,
+        "endChar": 44
+      },
+      "revId": "067c19282ec17772d9817449e761df07d558aed5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
