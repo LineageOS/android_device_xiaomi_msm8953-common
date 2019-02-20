@@ -15,8 +15,9 @@ LOCAL_HEADER_LIBRARIES += libhardware_headers
 LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 LOCAL_SRC_FILES := power.c metadata-parser.c utils.c list.c hint-data.c powerhintparser.c
 LOCAL_C_INCLUDES := external/libxml2/include \
-                     external/icu/icu4c/source/common
+                    external/icu/icu4c/source/common
 
+# Include target-specific files.
 LOCAL_SRC_FILES += power-8953.c
 
 ifeq ($(TARGET_USES_INTERACTION_BOOST),true)
@@ -28,3 +29,4 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS += -Wno-unused-parameter -Wno-unused-variable
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
+

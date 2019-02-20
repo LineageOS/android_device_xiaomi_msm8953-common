@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012-2013,2015-2017, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013,2015-2018, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -255,7 +255,7 @@ int perf_hint_enable(int hint_id , int duration)
         if (perf_hint) {
             lock_handle = perf_hint(hint_id, NULL, duration, -1);
             if (lock_handle == -1)
-                ALOGE("Failed to acquire lock.");
+                ALOGE("Failed to acquire lock for hint_id: %X.", hint_id);
         }
     }
     return lock_handle;
