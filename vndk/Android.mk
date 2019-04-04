@@ -1,3 +1,5 @@
+ifneq ($(BOARD_VNDK_VERSION),current)
+
 VNDK_SP_LIBRARIES := \
     android.hardware.graphics.allocator@2.0 \
     android.hardware.graphics.common@1.0 \
@@ -92,3 +94,4 @@ LOCAL_REQUIRED_MODULES := \
     $(addsuffix .vndk-ext-gen,$(EXTRA_VENDOR_LIBRARIES))
 include $(BUILD_PHONY_PACKAGE)
 
+endif
