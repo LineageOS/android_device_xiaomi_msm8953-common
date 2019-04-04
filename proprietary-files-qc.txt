@@ -662,6 +662,7 @@ lib/libwfduibcsrcinterface.so
 vendor/bin/wifidisplayhalservice
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so
+vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so|93487a83a35f0fa3fe37445edd3ff22fcc52e4fc
 vendor/lib/libwfdcommonutils_proprietary.so
 vendor/lib/libwfdhaldsmanager.so
 vendor/lib/libwfdhdcpcp.so
