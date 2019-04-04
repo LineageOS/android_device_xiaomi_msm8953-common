@@ -64,6 +64,38 @@ if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
     extract "$MY_DIR"/../$DEVICE/proprietary-files.txt "$SRC" "$SECTION"
 fi
 
+DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+
+if [ "$DEVICE" = "tissot" ]; then
+patchelf --remove-needed libbacktrace.so "$DEVICE_BLOB_ROOT"/lib64/hw/gf_fingerprint.default.so
+patchelf --remove-needed libunwind.so "$DEVICE_BLOB_ROOT"/lib64/hw/gf_fingerprint.default.so
+patchelf --remove-needed libkeystore_binder.so "$DEVICE_BLOB_ROOT"/lib64/hw/gf_fingerprint.default.so
+patchelf --remove-needed libsoftkeymasterdevice.so "$DEVICE_BLOB_ROOT"/lib64/hw/gf_fingerprint.default.so
+patchelf --remove-needed libsoftkeymaster.so "$DEVICE_BLOB_ROOT"/lib64/hw/gf_fingerprint.default.so
+patchelf --remove-needed libkeymaster_messages.so "$DEVICE_BLOB_ROOT"/lib64/hw/gf_fingerprint.default.so
+
+patchelf --remove-needed libbacktrace.so "$DEVICE_BLOB_ROOT"/lib64/libgoodixfingerprintd_binder.so
+patchelf --remove-needed libunwind.so "$DEVICE_BLOB_ROOT"/lib64/libgoodixfingerprintd_binder.so
+patchelf --remove-needed libkeystore_binder.so "$DEVICE_BLOB_ROOT"/lib64/libgoodixfingerprintd_binder.so
+patchelf --remove-needed libsoftkeymasterdevice.so "$DEVICE_BLOB_ROOT"/lib64/libgoodixfingerprintd_binder.so
+patchelf --remove-needed libsoftkeymaster.so "$DEVICE_BLOB_ROOT"/lib64/libgoodixfingerprintd_binder.so
+
+patchelf --remove-needed libbacktrace.so "$DEVICE_BLOB_ROOT"/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
+patchelf --remove-needed libunwind.so "$DEVICE_BLOB_ROOT"/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
+patchelf --remove-needed libkeystore_binder.so "$DEVICE_BLOB_ROOT"/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
+patchelf --remove-needed libsoftkeymasterdevice.so "$DEVICE_BLOB_ROOT"/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
+patchelf --remove-needed libsoftkeymaster.so "$DEVICE_BLOB_ROOT"/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
+patchelf --remove-needed libkeymaster_messages.so "$DEVICE_BLOB_ROOT"/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
+
+patchelf --remove-needed libbacktrace.so "$DEVICE_BLOB_ROOT"/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
+patchelf --remove-needed libunwind.so "$DEVICE_BLOB_ROOT"/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
+patchelf --remove-needed libkeystore_binder.so "$DEVICE_BLOB_ROOT"/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
+patchelf --remove-needed libsoftkeymasterdevice.so "$DEVICE_BLOB_ROOT"/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
+patchelf --remove-needed libsoftkeymaster.so "$DEVICE_BLOB_ROOT"/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
+patchelf --remove-needed libkeymaster_messages.so "$DEVICE_BLOB_ROOT"/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
+
+fi
+
 if [ "$DEVICE" = "mido" ]; then
     # Hax for cam configs
     CAMERA2_SENSOR_MODULES="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmcamera2_sensor_modules.so
