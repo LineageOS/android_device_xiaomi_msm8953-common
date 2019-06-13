@@ -397,9 +397,6 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system system
 
-    #Start move time data to /data/vendor once post-fs-data done
-    start vendor.move_time_data
-
 on property:hw.fm.init=*
     write /sys/module/radio_iris_transport/parameters/fmsmd_set ${hw.fm.init}
 
@@ -522,14 +519,6 @@ on property:ro.data.large_tcp_window_size=true
 on property:sys.sysctl.tcp_adv_win_scale=*
     write /proc/sys/net/ipv4/tcp_adv_win_scale ${sys.sysctl.tcp_adv_win_scale}
 
-# Data Migration
-service vendor.move_wifi_data /system/bin/move_wifi_data.sh
-    class main
-    user  wifi
-    group wifi
-    disabled
-    oneshot
-
 service loc_launcher /system/vendor/bin/loc_launcher
     class late_start
     user gps
@@ -588,13 +577,6 @@ on property:init.svc.surfaceflinger=restarting
     stop  vendor.hwcomposer-2-2
     start vendor.hwcomposer-2-1
     start vendor.hwcomposer-2-2
-
-service vendor.move_time_data /system/bin/move_time_data.sh
-    class main
-    user system
-    group system
-    disabled
-    oneshot
 
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override
