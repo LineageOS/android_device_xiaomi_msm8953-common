@@ -177,6 +177,7 @@ TARGET_PER_MGR_ENABLED := true
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
+TARGET_POWER_HAL := true
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
@@ -191,6 +192,9 @@ TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab_AB.recovery.qcom
 else
 TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab.recovery.qcom
 endif
+
+# Thermal
+TARGET_THERMAL_HAL := true
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
