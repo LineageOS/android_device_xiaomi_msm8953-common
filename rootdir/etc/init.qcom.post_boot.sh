@@ -423,7 +423,11 @@ else
     fi
 
     # Set allocstall_threshold to 0 for all targets.
+    # Set swappiness to 100 for all targets
     echo 0 > /sys/module/vmpressure/parameters/allocstall_threshold
+    echo 100 > /proc/sys/vm/swappiness
+
+    configure_zram_parameters
 
     configure_read_ahead_kb_values
 

@@ -668,6 +668,3 @@ service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
     oneshot
     interface android.hardware.audio@4.0::IDevicesFactory default
     interface android.hardware.audio@2.0::IDevicesFactory default
-
-on property:dev.bootcomplete=1
-    swapon_all /vendor/etc/fstab.qcom
