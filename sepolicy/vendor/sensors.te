@@ -1,0 +1,2 @@
+allow sensors mnt_vendor_file:dir { rw_dir_perms };
+allow sensors mnt_vendor_file:file { rw_file_perms };
