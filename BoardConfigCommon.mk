@@ -135,8 +135,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
 #FM
-BOARD_HAVE_QCOM_FM := true
-TARGET_QCOM_NO_FM_FIRMWARE := true
+#BOARD_HAVE_QCOM_FM := true
+#TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # GPS
 USE_DEVICE_SPECIFIC_GPS := true
@@ -192,6 +192,7 @@ endif
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
