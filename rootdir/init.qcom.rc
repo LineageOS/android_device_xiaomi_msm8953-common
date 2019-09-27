@@ -447,18 +447,6 @@ on property:ro.vendor.iocgrp.config=1
     write /dev/blkio/blkio.weight 1000
     write /dev/blkio/bg/blkio.weight 100
 
-service vendor.cnd /system/vendor/bin/cnd
-    class main
-    user system
-    group system wifi inet radio wakelock net_admin
-    writepid /dev/cpuset/system-background/tasks
-
-service dpmQmiMgr /system/vendor/bin/dpmQmiMgr
-    class main
-    user system
-    group system
-    writepid /dev/cpuset/system-background/tasks
-
 service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     class core
     user vendor_qrtr
@@ -611,12 +599,6 @@ on property:init.svc.surfaceflinger=restarting
     stop  vendor.hwcomposer-2-2
     start vendor.hwcomposer-2-1
     start vendor.hwcomposer-2-2
-
-service time_daemon /system/vendor/bin/time_daemon
-    class main
-    user root
-    group root
-    writepid /dev/cpuset/system-background/tasks
 
 service vendor.move_time_data /system/bin/move_time_data.sh
     class main
