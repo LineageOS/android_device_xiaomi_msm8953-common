@@ -136,6 +136,13 @@ vendor/lib64/vendor.qti.hardware.factory@1.0.so|7a61c2d4acaf748934d154af3a6b8fe6
 vendor/lib64/vendor.qti.hardware.factory@1.1.so|1bf6d03e47d20df05725dff70c3723d0ac69f4f6
 vendor/lib64/vendor.qti.latency@2.0.so|1b9583d7536064e4f37a4bfeb68f918eaddfee81
 
+# Cryptfs HW - from LA.UM.8.6.2.r1-03700-89xx.0
+vendor/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti|36545cfb29d84a545928f57a72c80f37d7fcfba0
+vendor/etc/init/vendor.qti.hardware.cryptfshw@1.0-service-qti.rc|7ee4786518d1c89cb2a9d08268b936206cb64b56
+vendor/lib64/libcryptfshwcommon.so|afa668edf752dbf7092ea45b59f094132e4cf0a3
+vendor/lib64/libcryptfshwhidl.so|1dc62e0dbaf19aec67082f4a6a23383b159d2b5c
+vendor/lib64/vendor.qti.hardware.cryptfshw@1.0.so|0ca7cdf01de34d7ddfba2dfa130e3beddddc3bc2
+
 # Charger
 vendor/bin/hvdcp_opti
 
