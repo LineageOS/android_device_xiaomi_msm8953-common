@@ -33,6 +33,24 @@ write_makefiles "${MY_DIR}/proprietary-files.txt" true
 # Finish
 write_footers
 
+if [ -s "${MY_DIR}/../${DEVICE_SPECIFIED_COMMON}/proprietary-files.txt" ]; then
+    DEVICE_COMMON="${DEVICE_SPECIFIED_COMMON}"
+
+    # Reinitialize the helper for device specified common
+    setup_vendor "${DEVICE_SPECIFIED_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
+
+    # Copyright headers and guards
+    write_headers "daisy sakura"
+
+    # The standard device specified common blobs
+    write_makefiles "${MY_DIR}/../${DEVICE_SPECIFIED_COMMON}/proprietary-files.txt" true
+
+    # We are done!
+    write_footers
+
+    DEVICE_COMMON="msm8953-common"
+fi
+
 if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
     setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false
