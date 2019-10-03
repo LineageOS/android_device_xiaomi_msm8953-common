@@ -48,16 +48,35 @@ vendor/lib64/soundfx/libqcvirt.so
 # ANT+ (vendor)
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/bin/wcnss_filter
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/libbtnv.so
-vendor/lib64/libbt-hidlclient.so
+# Bluetooth - from LA.UM.8.6.2.r1-03700-89xx.0
+-lib/libbtconfigstore.so|c88af75a5c8e62c75d505a89c574117feefc11c6
+-lib64/libbtconfigstore.so|0448de689901f7b3d9bd95224aebf674cefc6c89
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|535491e4a8036125259bab4579a53cadcb08dcc3
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|e5d7b4328cb2d7f2272ab3616b307b32cffcca1a
+vendor/lib64/libbtnv.so|1d5950be9a0324e3ec17da3a9a884d99a7720f69
+vendor/lib64/libbt-hidlclient.so|1ab2068ff7c71355e6cf7055f1d28a76da303742
 
-# Bluetooth (shared dependencies)
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
+# Bluetooth (shared dependencies) - from LA.UM.8.6.2.r1-03700-89xx.0
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|82ad748b7abeb20e226ea969cd7dbc2b7021ffc0
+
+# Bluetooth Audio - from LA.UM.8.6.2.r1-03700-89xx.0
+vendor/lib64/hw/audio.bluetooth_qti.default.so|abe373d6cb2b56988991b52347e93343707ffbe1
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|b9ca697c1b9b7d066e5c1b45f71deb3539f7afee
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|d4de3f73589623428d37f7779d06d017c5243b99
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|85bcec0783c335ac04898428e6d001c24e16013b
+vendor/lib64/libbluetooth_audio_session_qti.so|db6bbe81f2f5173418f54eff125221d099b5547f
+vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so|7ecd3413d5add9918583f56a085122b180016e25
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|1694fe4999945f2807b5b7b9ced39842005c8e39
+vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|d2f89ec6ab946f62048fb18f2635cde710cff37d
+vendor/lib/hw/audio.bluetooth_qti.default.so|44f13bed29e03b44bee24772a77c854ae7a43406
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|9049ad1bd9530edebc8474389c20f81a1de9588e
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|30ecc89822100437371fbcebb10ff0db81844f91
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|4ce10533c589ef97d5377c464c8e9664f423829c
+vendor/lib/libbluetooth_audio_session_qti.so|1b12b17d7c2d6d3137d98c5dd2c774f18cf145be
+vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|94c983b85ba5bcb0902e18f33419ac81b5165e39
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|0d3d5de154e6d40d99a9bbca4cb170dc02bc3902
+vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|81ac65e4317355abe11ee1ccc7d55f73d16ea69a
 
 # Camera firmware
 vendor/firmware/cpp_firmware_v1_8_0.fw
