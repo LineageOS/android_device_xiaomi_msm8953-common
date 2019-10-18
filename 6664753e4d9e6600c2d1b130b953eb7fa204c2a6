@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8372a830_a14c4df2",
+        "filename": "permissions/telephony_product_privapp-permissions-qti.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2019-10-18T13:55:47Z",
+      "side": 1,
+      "message": "cough",
+      "range": {
+        "startLine": 5,
+        "startChar": 4,
+        "endLine": 5,
+        "endChar": 32
+      },
+      "revId": "6664753e4d9e6600c2d1b130b953eb7fa204c2a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
