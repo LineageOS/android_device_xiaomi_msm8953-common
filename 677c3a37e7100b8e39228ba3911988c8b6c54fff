@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "57c1c2eb_ae43203a",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 18479
+      },
+      "writtenOn": "2019-11-05T18:40:35Z",
+      "side": 1,
+      "message": "Why doing an if clause when there is one above. This can be easily solved with TARGET_KERNEL_SOURCE :\u003d kernel/xiaomi/msm8953 defined in the 4.9 check.\n\nExample:\n\nifeq ($(TARGET_KERNEL_VERSION),4.9)\nTARGET_KERNEL_SOURCE :\u003d kernel/xiaomi/msm8953\nBOARD_KERNEL_CMDLINE +\u003d androidboot.usbconfigfs\u003dtrue\nTARGET_KERNEL_CLANG_COMPILE :\u003d true\nelse\nTARGET_KERNEL_SOURCE :\u003d kernel/xiaomi/msm8953-3.18\nendif",
+      "revId": "677c3a37e7100b8e39228ba3911988c8b6c54fff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
