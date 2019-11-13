@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d0afd1ce_900b01ba",
+        "filename": "proprietary-files-qc.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 286,
+      "author": {
+        "id": 21054
+      },
+      "writtenOn": "2019-11-13T22:53:03Z",
+      "side": 1,
+      "message": "Here",
+      "revId": "47b5fb69a43e3a2556115b7f3fa1091a86068682",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c334652c_4758090b",
+        "filename": "proprietary-files-qc.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 438,
+      "author": {
+        "id": 21054
+      },
+      "writtenOn": "2019-11-13T22:53:03Z",
+      "side": 1,
+      "message": "There\u0027s a redundant entry of ipacm-diag under # Ipacm tag",
+      "revId": "47b5fb69a43e3a2556115b7f3fa1091a86068682",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
