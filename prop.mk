@@ -86,6 +86,13 @@ vendor.display.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=1 \
 vendor.gralloc.enable_fb_ubwc=1
 
+# SurfaceFlinger
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.surface_flinger.protected_contents=true \
+ro.surface_flinger.set_display_power_timer_ms=10000 \
+ro.surface_flinger.set_touch_timer_ms=5000 \
+ro.surface_flinger.set_idle_timer_ms=9000
+
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
 drm.service.enabled=true
