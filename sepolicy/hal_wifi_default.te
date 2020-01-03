@@ -1,0 +1,2 @@
+allow hal_wifi_default proc_net:file rw_file_perms;
+ 
