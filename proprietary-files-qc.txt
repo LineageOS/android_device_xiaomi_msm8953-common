@@ -724,7 +724,7 @@ vendor/bin/thermal-engine
 vendor/lib64/libthermalioctl.so
 
 # Time services - from Daisy QKQ1.191002.002 V11.0.5.0.QDLMIXM
--vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|27f9b81621c446baa8c37581d9bfbca2fd67b496
+-vendor/app/TimeService/TimeService.apk|27f9b81621c446baa8c37581d9bfbca2fd67b496
 vendor/bin/time_daemon|75b8a6a14cfb4424499ccb2bf1cad011df295d0e
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 -vendor/lib/libtime_genoff.so|a574d287e7e73649685b702f4fe497eb7c6ba727
