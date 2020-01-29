@@ -22,8 +22,8 @@
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.xiaomi_8953      u:object_r:hal_lineage_touch_default_exec:s0
 
 # Input devices
-/(vendor|system/vendor)/usr/idc(/.*)?                         u:object_r:idc_file:s0
-/(vendor|system/vendor)/usr/keylayout(/.*)?                   u:object_r:keylayout_file:s0
+/(vendor|system/vendor)/usr/idc(/.*)?                         u:object_r:vendor_idc_file:s0
+/(vendor|system/vendor)/usr/keylayout(/.*)?                   u:object_r:vendor_keylayout_file:s0
 
 # Location
 /data/vendor/location/xtra/socket_hal_xtra    u:object_r:location_socket:s0
