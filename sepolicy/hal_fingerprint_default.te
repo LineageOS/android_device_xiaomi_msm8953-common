@@ -1,3 +1,5 @@
 r_dir_file(hal_fingerprint_default, sysfs_kgsl)
 allow hal_fingerprint_default rootfs:dir read;
 allow hal_fingerprint_default storage_file:dir search;
+allow hal_fingerprint_default storage_file:lnk_file read;
+

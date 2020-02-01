@@ -1,0 +1,2 @@
+allow wcnss_service serialno_prop:file {open read};
+allow wcnss_service wifi_data_file:dir search;
