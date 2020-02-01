@@ -36,15 +36,24 @@ vendor.voice.voip.conc.disabled=true
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
 bluetooth.hfp.client=1 \
-qcom.bluetooth.soc=smd \
+vendor.qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
+ro.bluetooth.dun=true \
+ro.bluetooth.sap=true \
+ro.qualcomm.bluetooth.ftp=true \
+ro.qualcomm.bluetooth.hfp=true \
+ro.qualcomm.bluetooth.hsp=true \
+ro.qualcomm.bluetooth.map=true \
+ro.qualcomm.bluetooth.nap=true \
+ro.qualcomm.bluetooth.opp=true \
+ro.qualcomm.bluetooth.pbap=true \
 ro.qualcomm.bt.hci_transport=smd
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 camera.display.lmax=1280x720 \
 camera.display.umax=1920x1080 \
-camera.hal1.packagelist=com.skype.raider,com.google.android.talk \
+vendor.camera.hal1.packagelist=com.skype.raider,com.google.android.talk \
 camera.lowpower.record.enable=1 \
 media.camera.ts.monotonic=1 \
 persist.camera.gyro.disable=0 \
@@ -73,7 +82,6 @@ debug.sf.hw=0 \
 debug.sf.latch_unsignaled=1 \
 debug.sf.recomputecrop=0 \
 dev.pm.dyn_samplingrate=1 \
-persist.debug.wfd.enable=1 \
 persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
