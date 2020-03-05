@@ -180,6 +180,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PROVISIONED=1 \
 persist.dbg.volte_avail_ovr=1 \
 persist.dbg.vt_avail_ovr=1 \
+persist.data.iwlan=1 \
+persist.data.iwlan.ipsec.ap=1 \
 persist.dbg.wfc_avail_ovr=1 \
 persist.vendor.radio.apm_sim_not_pwdn=1 \
 persist.radio.multisim.config=dsds \
@@ -192,7 +194,21 @@ rild.libargs=-d/dev/smd0 \
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 ro.telephony.call_ring.multiple=false \
 ro.telephony.default_network=22,20 \
-service.qti.ims.enabled=1
+service.qti.ims.enabled=1 \
+telephony.lteOnCdmaDevice=1 \
+persist.radio.VT_ENABLE=1 \
+persist.radio.volte.dan_support=true \
+persist.sys.cust.lte_config=true \
+ro.telephony.iwlan_operation_mode=legacy \
+persist.vendor.vt.supported=1 \
+persist.vendor.data.iwlan.enable=true \
+persist.vendor.sys.cnd.iwlan=1 \
+persist.vendor.cne.logging.qxdm=3974 \
+persist.sys.fflag.override.settings_network_and_internet_v2=true
+
+# RCS
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.rcs.supported=1
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
