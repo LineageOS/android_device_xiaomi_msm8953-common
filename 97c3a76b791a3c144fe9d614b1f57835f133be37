@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9bdb3022_f2af8566",
+        "filename": "msm8953.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 285,
+      "author": {
+        "id": 25644
+      },
+      "writtenOn": "2020-03-23T11:09:25Z",
+      "side": 1,
+      "message": "This condition is never true because TARGET_KERNEL_VERSION is not set when this file is read in.\nI think this is why USB tethering (and, possibly, Android Auto head unit connection) is broken on tissot.",
+      "revId": "97c3a76b791a3c144fe9d614b1f57835f133be37",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
