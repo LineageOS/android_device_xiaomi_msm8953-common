@@ -400,8 +400,8 @@ on post-fs-data
     #Start move time data to /data/vendor once post-fs-data done
     start vendor.move_time_data
 
-on property:vendor.hw.fm.init=*
-    write /sys/module/radio_iris_transport/parameters/fmsmd_set ${vendor.hw.fm.init}
+on property:hw.fm.init=*
+    write /sys/module/radio_iris_transport/parameters/fmsmd_set ${hw.fm.init}
 
 service iop /system/vendor/bin/iop
     class main
