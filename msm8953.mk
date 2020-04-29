@@ -275,6 +275,15 @@ PRODUCT_COPY_FILES += \
 # Properties
 -include device/xiaomi/msm8953-common/prop.mk
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite-vendorcompat
+
+# Public libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson
