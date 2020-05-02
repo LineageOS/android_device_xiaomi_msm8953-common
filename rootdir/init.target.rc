@@ -42,6 +42,17 @@ on fs
     restorecon_recursive /mnt/vendor/persist
 
 on init
+    setprop ro.vendor.hw.dualsim ${ro.boot.dualsim}
+    setprop ro.vendor.hw.device ${ro.boot.device}
+    setprop ro.vendor.hw.radio ${ro.boot.radio}
+
+on property:ro.vendor.hw.dualsim=true
+    setprop persist.radio.multisim.config dsds
+
+on property:ro.vendor.hw.dualsim=false
+    setprop persist.radio.multisim.config ""
+
+on init
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
     write /dev/stune/top-app/schedtune.sched_boost_no_override 1
     write /dev/stune/schedtune.colocate 0
