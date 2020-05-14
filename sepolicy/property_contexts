@@ -3,3 +3,4 @@ sys.post_boot.parsed       u:object_r:vendor_mpctl_prop:s0
 persist.net.doxlat         u:object_r:vendor_xlat_prop:s0
 camera.dual.mode           u:object_r:camera_prop:s0
 persist.camera.            u:object_r:camera_prop:s0
+ro.alarm_boot                                                 u:object_r:vendor_alarm_boot_prop:s0
