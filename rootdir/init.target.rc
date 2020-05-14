@@ -114,10 +114,14 @@ on property:sys.shutdown.requested=*
     stop vendor.ims_rtp_daemon
 
 service vendor.qseecomd /vendor/bin/qseecomd
-   class core
-   user root
-   group root
-   writepid /dev/cpuset/system-background/tasks
+    class core
+    user root
+    group root
+    writepid /dev/cpuset/system-background/tasks
+
+on property:vendor.sys.listeners.registered=*
+    setprop sys.keymaster.loaded ${vendor.sys.listeners.registered}
+    setprop vendor.sys.keymaster.loaded ${vendor.sys.listeners.registered}
 
 service thermal-engine /system/vendor/bin/thermal-engine
    class main
