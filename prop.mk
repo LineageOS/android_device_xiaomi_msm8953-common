@@ -206,7 +206,8 @@ persist.vendor.vt.supported=1 \
 persist.vendor.data.iwlan.enable=true \
 persist.vendor.sys.cnd.iwlan=1 \
 persist.vendor.cne.logging.qxdm=3974 \
-persist.sys.fflag.override.settings_network_and_internet_v2=true
+persist.sys.fflag.override.settings_network_and_internet_v2=true \
+ro.telephony.use_old_mnc_mcc_format=true
 
 # RCS
 PRODUCT_PROPERTY_OVERRIDES += \
