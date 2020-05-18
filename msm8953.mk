@@ -205,10 +205,6 @@ PRODUCT_PACKAGES += \
     libgui_shim \
     vendor.qti.hardware.camera.device@1.0
 
-# HW crypto
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
-
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/ft5435_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ft5435_ts.kl \
