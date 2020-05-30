@@ -48,8 +48,8 @@ vendor/lib64/libqtigef.so|70df5848c061154e4c33b147e06d4979e2391b5e
 vendor/lib64/soundfx/libqcbassboost.so|0d2afd6f2c5b9aa2397f3e1cb3287bf906cf8fb6
 vendor/lib64/soundfx/libqcvirt.so|bb046694512d412d6a04bd95ccb2b573454d9717
 
-# ANT+ (vendor)
-vendor/lib64/com.qualcomm.qti.ant@1.0.so
+# ANT+ (vendor) - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc50f
 
 # Bluetooth - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 -lib/libbtconfigstore.so|cf6430d2616c9c1bbb98080c61ede28160fe1e9c
