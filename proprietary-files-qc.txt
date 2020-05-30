@@ -587,8 +587,8 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e157937
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|313677dd28de6f6b2a5cf8b136d8ce0723bb5a65
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|b478f9ba87abd265ac15a154ab7412fed5839664
 
-# Wi-Fi
-vendor/bin/wcnss_service
+# WiFi - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/bin/wcnss_service|1a7da5ec11248ea69af665d711a846e4cc7c95be
 
 # Wi-Fi Display
 bin/wfdservice
