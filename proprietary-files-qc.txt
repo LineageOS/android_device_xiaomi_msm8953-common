@@ -338,13 +338,13 @@ vendor/bin/ipacm-diag
 vendor/lib/hw/keystore.msm8953.so|c56d3768e04fc180d844dbca94be8c27770e37d5
 vendor/lib64/hw/keystore.msm8953.so|9660e1c13a3589114cf18db58e5b3c3c9e14059b
 
-# Listen
-vendor/lib64/hw/sound_trigger.primary.msm8953.so
-vendor/lib64/vendor.qti.voiceprint@1.0.so
-vendor/lib/hw/sound_trigger.primary.msm8953.so
-vendor/lib/libadpcmdec.so
-vendor/lib/libsmwrapper.so
-vendor/lib/vendor.qti.voiceprint@1.0.so
+# Listen - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/lib/hw/sound_trigger.primary.msm8953.so|991e0be9c5743d5d3394eb2f4b82740c3c0616f7
+vendor/lib/libadpcmdec.so|be5fdf08a08b635816381e61b6bbf2874c62f613
+vendor/lib/libsmwrapper.so|efed6475b26cafc15fed591a9aaa68b38cf6a37b
+vendor/lib/vendor.qti.voiceprint@1.0.so|b70091c7b738394468b7d732df283d23a3975f46
+vendor/lib64/hw/sound_trigger.primary.msm8953.so|4ff47ab34dfd457a57a5bede70769fbbc63c240e
+vendor/lib64/vendor.qti.voiceprint@1.0.so|aeca80d0859dd1084b4a6585779d79b48ae9aa76
 
 # Media - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 lib/extractors/libmmparserextractor.so|4178c228bdb7120cfdd6fd8ea4325cad9942f702
