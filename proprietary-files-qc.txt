@@ -72,6 +72,9 @@ vendor/firmware/cpp_firmware_v1_10_0.fw
 vendor/firmware/cpp_firmware_v1_5_2.fw
 vendor/firmware/cpp_firmware_v1_1_6.fw
 
+# Charger - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/bin/hvdcp_opti|bd0808db92452c5fd7ec272a35924f23fb4ffa01
+
 # CNE - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 etc/cne/Nexus/ATT/ATT_profiles.xml|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
 etc/cne/Nexus/ROW/ROW_profiles.xml|238e785e9674b27c4b2365958d127533d7293132
@@ -136,9 +139,6 @@ vendor/lib64/vendor.qti.hardware.factory@1.0.so|9dcf75a4877324e4080ac2088e6ca9ca
 vendor/lib64/vendor.qti.hardware.factory@1.1.so|882f4c7eee1b8247d503b185c0240d66e974901a
 vendor/lib64/vendor.qti.latency@2.0.so|0144eec541989f450695ec8cbdd595df4009fe1a
 
-# Charger
-vendor/bin/hvdcp_opti
-
 # DPM - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 product/bin/dpmd|cac8f3eadeeec202f56d5b5f7a8c75e82e376d9f
 product/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
@@ -179,9 +179,9 @@ vendor/bin/hw/android.hardware.drm@1.2-service.widevine|e130b8f1c8d46d8a185b00cb
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|68767969f86126ada017fc09af151e299db651d5
 vendor/lib64/libwvhidl.so|d02a20d8e95e64c391e0af86a32dad869ceeb3b4
 
-# Gatekeeper
-vendor/lib/hw/gatekeeper.msm8953.so
-vendor/lib64/hw/gatekeeper.msm8953.so
+# Gatekeeper - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/lib/hw/gatekeeper.msm8953.so|cd04140788659ae07a50081baeb3eb2e42f37028
+vendor/lib64/hw/gatekeeper.msm8953.so|1086e5dcda7aa2bed7ac015f7850095f6199a1c2
 
 # GPS - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti|7f7006829005658c9b89c61ac02f107d3d6fe470
@@ -309,9 +309,9 @@ vendor/firmware/a530_pm4.fw
 # Ipacm
 vendor/bin/ipacm-diag
 
-# Keystore
-vendor/lib/hw/keystore.msm8953.so
-vendor/lib64/hw/keystore.msm8953.so
+# Keystore - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/lib/hw/keystore.msm8953.so|c56d3768e04fc180d844dbca94be8c27770e37d5
+vendor/lib64/hw/keystore.msm8953.so|9660e1c13a3589114cf18db58e5b3c3c9e14059b
 
 # Listen
 vendor/lib64/hw/sound_trigger.primary.msm8953.so
