@@ -567,6 +567,12 @@ service loc_launcher /system/vendor/bin/loc_launcher
     group gps
     writepid /dev/cpuset/system-background/tasks
 
+service qcom-c_main-sh /vendor/bin/init.class_main.sh
+    class main
+    user root
+    group root system
+    oneshot
+    
 service qcom-sh /vendor/bin/init.qcom.sh
     class late_start
     user root
