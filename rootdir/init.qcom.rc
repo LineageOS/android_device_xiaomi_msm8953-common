@@ -621,12 +621,6 @@ on property:init.svc.surfaceflinger=restarting
     start vendor.hwcomposer-2-1
     start vendor.hwcomposer-2-2
 
-service time_daemon /system/vendor/bin/time_daemon
-    class main
-    user root
-    group root
-    writepid /dev/cpuset/system-background/tasks
-
 service vendor.move_time_data /system/bin/move_time_data.sh
     class main
     user system
