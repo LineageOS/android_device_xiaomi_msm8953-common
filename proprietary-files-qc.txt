@@ -581,24 +581,27 @@ vendor/lib64/vendor.qti.imsrtpservice@2.0.so|6ef5cd72d34c20e82cb0e58681a4aae9b0d
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so|9eb713ce4ffd38006bd0ca794a7e4152b33b3ded
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so|6dbe703a5a8389c342008c950aaec7a3a260a055
 
-# Sensors
-vendor/bin/sensors.qti
-vendor/lib/hw/activity_recognition.msm8953.so
-vendor/lib/libsensor1.so
-vendor/lib/libsensor_reg.so
-vendor/lib/libsensor_user_cal.so
-vendor/lib/sensors.ssc.so
-vendor/lib64/hw/activity_recognition.msm8953.so
-vendor/lib64/libsensor1.so
-vendor/lib64/libsensor_reg.so
-vendor/lib64/libsensor_user_cal.so
-vendor/lib64/sensors.ssc.so
+# Sensors - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/bin/sensors.qti|710b95b8fbec649b63204372988e0d4f4641fcf4
+vendor/lib/hw/activity_recognition.msm8953.so|1c7334f56182513bddefcb3b655064cca1121e21
+vendor/lib/libsensor1.so|a3bff5966ef0dd0623d385da9a8809f6dabb11f3
+vendor/lib/libsensor_reg.so|8f113416861ab8c14613ebf3ea6eeb9997971624
+vendor/lib/libsensor_user_cal.so|e76bc983cce7711bbb62a0f6062078fe7fb954eb
+vendor/lib/sensor_calibrate.so|63edd83044713c8b5545655daf4e0eb7cdbebe1d
+vendor/lib/sensors.ssc.so|302e5aee38e1296dfba32b681681492d5070f509
+vendor/lib64/hw/activity_recognition.msm8953.so|51a67f37dc2f7c9654fa3efe6a193e8dd93846c2
+vendor/lib64/libsensor1.so|24a1ee61b8d8d9494c7ce637bfdc280b428da5c8
+vendor/lib64/libsensor_reg.so|54baa94535e7dd96804019810e90cfbec5519bf5
+vendor/lib64/libsensor_user_cal.so|aea178debd6562e4f9e352aede494429c68ffcec
+vendor/lib64/sensor_calibrate.so|4bb147013fc7bb41b1009b591a4d91abbc54fb30
+vendor/lib64/sensors.ssc.so|9affbc5130223a63c7c8ee33a1b7408d739e1466
 
-# Thermal
-vendor/bin/thermal-engine
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalioctl.so
+# Thermal - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/bin/thermal-engine|4ab3c410fbcf9f8cae711ea4ba16cd2797712de6
+-vendor/lib/libthermalclient.so|6077e27e15d9e3e43fa57d6d5405c49284f48949
+-vendor/lib64/libthermalclient.so|12b26d4242b1a8913ddcb511f42a1debb83689af
+vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
+vendor/lib64/libthermalioctl.so|24b22582f3f77769c5fbca06fcc1d3b6533cdf40
 
 # Time services - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 -vendor/app/TimeService/TimeService.apk|27f9b81621c446baa8c37581d9bfbca2fd67b496
