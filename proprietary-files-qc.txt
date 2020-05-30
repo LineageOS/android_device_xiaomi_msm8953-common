@@ -24,29 +24,29 @@ vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|1ff4a48009e88435d93fd2b9b0c5ea59cedbb
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|91b9200dbb982abf0d6b440668252d892a616f66
 vendor/lib/rfsa/adsp/libfastcvadsp.so|9818625bfa018f517e32a8f4a1e7fb4b255e5049
 
-# Audio
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libadm.so
-vendor/lib/libaudcal.so
-vendor/lib/libaudioalsa.so
-vendor/lib/libdrc.so
-vendor/lib/libqtigef.so
-vendor/lib/libsurround_3mic_proc.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
-vendor/lib64/libacdb-fts.so
-vendor/lib64/libacdbloader.so
-vendor/lib64/libacdbrtac.so
-vendor/lib64/libadiertac.so
-vendor/lib64/libaudcal.so
-vendor/lib64/libaudioalsa.so
-vendor/lib64/libqtigef.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcvirt.so
+# Audio - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/lib/libacdb-fts.so|9fb9fe8f1e22e38e41f1517b8f206a50bbb24419
+vendor/lib/libacdbloader.so|f33941720463b3c8215fc644b7d638c6d8ab74c7
+vendor/lib/libacdbrtac.so|f997dfef5413873af88bd8636a501401e9ea9631
+vendor/lib/libadiertac.so|6cfa3c70f01617a944ed2d8512189400ccdec21e
+vendor/lib/libadm.so|b373d5cb6e4c6e081f1d206f6d9538339f330fda
+vendor/lib/libaudcal.so|8c4d9a610c5cce20dee9721feb4864ea2470caf2
+vendor/lib/libaudioalsa.so|1455df26b622c518c04d7f54746683ed96aaa74f
+vendor/lib/libdrc.so|55fc13d205ce3199de2cf1f9c1dab479909c15be
+vendor/lib/libqtigef.so|fbedb509c61ff1a7d6e9c4a099af346ca781430a
+vendor/lib/libsurround_3mic_proc.so|d8c1d2cb7d598eee79ccfe5b7ec83a185c8fef6c
+vendor/lib/soundfx/libqcbassboost.so|bc8ae80ff1ade557ff494631494c2f8261028acb
+vendor/lib/soundfx/libqcreverb.so|1b3cef3c4c9145662fddb03c5e1e7dd3a4f25e1e
+vendor/lib/soundfx/libqcvirt.so|41bf71787ffae3f511d9cb3e32b9e721a0a2e385
+vendor/lib64/libacdb-fts.so|662467af62f9607abfd5acb532dfbf69240bcc70
+vendor/lib64/libacdbloader.so|7c49e7d95090e20f6198f03959323359e4b2ed19
+vendor/lib64/libacdbrtac.so|54d114f280eb99f4aa73890c5e9cfbb5b55eb813
+vendor/lib64/libadiertac.so|5b511a0312721e9e6ff27fae9a3f035cf66ac6f7
+vendor/lib64/libaudcal.so|a2788d71d00be193e9704edefc1b363cbc847942
+vendor/lib64/libaudioalsa.so|0a8f0746cc8fd381d001f52c7eb4460951802ac4
+vendor/lib64/libqtigef.so|70df5848c061154e4c33b147e06d4979e2391b5e
+vendor/lib64/soundfx/libqcbassboost.so|0d2afd6f2c5b9aa2397f3e1cb3287bf906cf8fb6
+vendor/lib64/soundfx/libqcvirt.so|bb046694512d412d6a04bd95ccb2b573454d9717
 
 # ANT+ (vendor)
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
