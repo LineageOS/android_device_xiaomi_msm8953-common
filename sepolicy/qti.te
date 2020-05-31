@@ -1,0 +1,2 @@
+allow qti vendor_file:dir read;
+

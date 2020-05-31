@@ -1,0 +1,2 @@
+allow netd device:file write;
+

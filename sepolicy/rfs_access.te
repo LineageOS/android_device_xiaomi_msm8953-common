@@ -1,0 +1,3 @@
+allow rfs_access vendor_file:dir read;
+allow rfs_access vfat:dir search;
+

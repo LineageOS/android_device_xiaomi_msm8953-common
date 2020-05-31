@@ -1,0 +1,2 @@
+allow hal_imsrtp vendor_file:dir read;
+

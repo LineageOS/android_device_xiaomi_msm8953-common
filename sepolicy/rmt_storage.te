@@ -2,4 +2,5 @@
 userdebug_or_eng(`
   allow rmt_storage debugfs_rmt:dir search;
   allow rmt_storage debugfs_rmt:file rw_file_perms;
+  allow rmt_storage vendor_file:dir read;
 ')

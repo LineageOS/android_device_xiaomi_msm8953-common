@@ -1,0 +1,2 @@
+allow vendor_per_mgr vendor_file:dir read;
+

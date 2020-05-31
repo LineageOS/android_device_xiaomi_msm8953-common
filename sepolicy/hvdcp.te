@@ -1,1 +1,3 @@
 allow hvdcp sysfs:dir read;
+allow hvdcp sysfs:file { open write };
+allow hvdcp vendor_file:dir read;

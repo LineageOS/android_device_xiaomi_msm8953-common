@@ -1,0 +1,2 @@
+allow time_daemon vendor_file:dir read;
+

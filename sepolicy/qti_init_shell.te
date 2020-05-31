@@ -8,4 +8,7 @@ allow qti_init_shell vendor_radio_data_file:file create_file_perms;
 allow qti_init_shell fm_prop:property_service set;
 allow qti_init_shell mnt_vendor_file:dir rmdir;
 allow qti_init_shell system_data_file:dir { setattr write };
+allow qti_init_shell vendor_file:dir read;
+allow qti_init_shell vfat:dir search;
+allow qti_init_shell vfat:file { getattr open };
 allow qti_init_shell self:capability { dac_override dac_read_search };

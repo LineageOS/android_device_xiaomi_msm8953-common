@@ -1,0 +1,2 @@
+allow irsc_util vendor_file:dir read;
+

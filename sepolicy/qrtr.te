@@ -1,0 +1,2 @@
+allow qrtr vendor_file:dir read;
+

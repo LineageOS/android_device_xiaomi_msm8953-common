@@ -1,0 +1,2 @@
+allow adpl vendor_file:dir read;
+

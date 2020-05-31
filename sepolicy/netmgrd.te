@@ -1,1 +1,3 @@
 set_prop(netmgrd, vendor_xlat_prop)
+allow netmgrd vendor_file:dir read;
+

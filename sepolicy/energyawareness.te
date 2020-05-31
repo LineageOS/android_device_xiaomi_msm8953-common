@@ -1,0 +1,2 @@
+allow energyawareness vendor_file:dir read;
+
