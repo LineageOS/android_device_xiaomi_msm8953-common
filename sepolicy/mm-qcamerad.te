@@ -2,7 +2,7 @@ type_transition mm-qcamerad camera_data_file:sock_file camera_socket "cam_socket
 type_transition mm-qcamerad camera_data_file:sock_file camera_socket "cam_socket2";
 allow mm-qcamerad camera_socket:dir w_dir_perms;
 allow mm-qcamerad camera_socket:sock_file { create unlink write };
-allow mm-qcamerad camera_data_file:dir search;
-allow mm-qcamerad camera_data_file:dir write;
+allow mm-qcamerad camera_data_file:dir { search write add_name remove_name};
 allow mm-qcamerad camera_data_file:file write;
+allow mm-qcamerad sysfs:file { open read getattr };
 r_dir_file(mm-qcamerad, sysfs_kgsl)
