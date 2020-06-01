@@ -1,10 +1,8 @@
 allow init proc_boot_reason:file r_file_perms;
-allow init system_file:file execute_no_trans;
 allow init sysfs_leds:lnk_file read;
 allow init hal_light_hwservice:hwservice_manager add;
 allow init hidl_base_hwservice:hwservice_manager add;
 allow init hwservicemanager:binder { transfer call };
 allow init sysfs_graphics:file { write open };
 allow init sysfs:file setattr;
-allow init vendor_file:file execute_no_trans;
-
+allow init vendor_file:file { execute_no_trans };

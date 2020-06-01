@@ -1,2 +1,0 @@
-allow zygote untrusted_app_27:process ptrace;
-

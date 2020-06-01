@@ -1,4 +1,2 @@
 allow priv_app firmware_file:filesystem getattr;
-allow priv_app mnt_vendor_file:dir search;
 allow priv_app theme_prop:file { open read};
-allow priv_app system_bootstrap_lib_file:dir getattr;
