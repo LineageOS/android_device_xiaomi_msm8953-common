@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d0e3a220_fa80c95d",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 186,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2020-06-08T14:41:51Z",
+      "side": 1,
+      "message": "Move this to device specific tree since https://github.com/LineageOS/android_device_xiaomi_msm8953-common/commit/9a0c0303d5ab9a2fd1ce6f1a7726f2638304c7db#diff-581794583e89a660d8f68651b78d17f9",
+      "revId": "6ec6a98b06524eaf81fb166c8ea828cabb5d7a4e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
