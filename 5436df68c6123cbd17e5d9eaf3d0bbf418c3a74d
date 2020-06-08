@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ce72a8f_db73108d",
+        "filename": "sepolicy/hvdcp.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 16439
+      },
+      "writtenOn": "2020-06-08T16:16:16Z",
+      "side": 1,
+      "message": "this should not be a thing, just as a half of other rules here.",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 27
+      },
+      "revId": "5436df68c6123cbd17e5d9eaf3d0bbf418c3a74d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
