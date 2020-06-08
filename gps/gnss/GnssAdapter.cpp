@@ -793,8 +793,6 @@ GnssAdapter::setConfig()
             mLocApi->setNMEATypesSync(mask);
         }
 
-        mLocApi->setXtraVersionCheckSync(gpsConf.XTRA_VERSION_CHECK);
-
         mLocApi->setConstrainedTuncMode(
                 gpsConf.CONSTRAINED_TIME_UNCERTAINTY_ENABLED == 1,
                 (float)gpsConf.CONSTRAINED_TIME_UNCERTAINTY_THRESHOLD,
