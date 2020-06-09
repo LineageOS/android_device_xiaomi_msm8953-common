@@ -643,10 +643,12 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# Widevine
-vendor/bin/hw/android.hardware.drm@1.1-service.widevine
-vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
-vendor/lib/libwvhidl.so
+# Widevine - from Daisy QKQ1.191002.002 V11.0.5.0.QDLMIXM
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine|e130b8f1c8d46d8a185b00cba5ff8a2a871ee94c
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|f206aecdd6843795f6448bb6d44d2244b3e48815
+vendor/lib/mediadrm/libwvdrmengine.so|85158394bd70442877d0fc2e29908cea97dff644
+vendor/lib64/libwvhidl.so|243dc27c272bf86da43703ab31106907048259de
+vendor/lib64/mediadrm/libwvdrmengine.so|fd53782817acdb28b690af2b9cc9870df1e9ba47
 
 # Wi-Fi
 vendor/bin/wcnss_service
