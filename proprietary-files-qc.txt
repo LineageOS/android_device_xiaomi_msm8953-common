@@ -85,8 +85,8 @@ vendor/lib64/soundfx/libasphere.so|f552a053f935299b3fd9be03a596eb4c40dee50e
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
 
 # Bluetooth - from Daisy QKQ1.191002.002 V11.0.5.0.QDLMIXM
--lib/libbtconfigstore.so|cf6430d2616c9c1bbb98080c61ede28160fe1e9c
--lib64/libbtconfigstore.so|a65efb84466346cfcb92cef590f0bfb4bd03adf5
+lib/libbtconfigstore.so|cf6430d2616c9c1bbb98080c61ede28160fe1e9c
+lib64/libbtconfigstore.so|a65efb84466346cfcb92cef590f0bfb4bd03adf5
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|378ad8ce95651b4bf81ad73aaffbdf0666c55432
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|a244ce3acd958c31865e048e0ead9bc54d1c0465
