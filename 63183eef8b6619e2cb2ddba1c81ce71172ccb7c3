@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8e4a1dc2_a8dae0b4",
+        "filename": "proprietary-files-qc.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-07-20T03:46:57Z",
+      "side": 0,
+      "message": "your firmware has the same name, and doesn\u0027t work?",
+      "range": {
+        "startLine": 110,
+        "startChar": 0,
+        "endLine": 120,
+        "endChar": 38
+      },
+      "revId": "63183eef8b6619e2cb2ddba1c81ce71172ccb7c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
