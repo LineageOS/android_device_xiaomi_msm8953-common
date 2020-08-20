@@ -1,0 +1,2 @@
+add_hwservice(cnd,hal_slmadapter_hwservice)
+allow cnd hal_slmadapter_hwservice:hwservice_manager find;
