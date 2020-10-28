@@ -181,3 +181,6 @@ ro.soc.model=SDM450
 
 # Time Services
 persist.timed.enable=true
+
+# Zygote
+zygote.critical_window.minute=10
