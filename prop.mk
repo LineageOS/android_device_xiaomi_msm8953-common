@@ -55,6 +55,7 @@ vidc.enc.dcvs.extra-buff-count=2
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
+ro.charger.disable_init_blank=true \
 ro.charger.enable_suspend=true
 
 # Cne/Dpm
