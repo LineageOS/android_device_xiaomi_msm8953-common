@@ -175,9 +175,6 @@ TARGET_USES_INTERACTION_BOOST := true
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
 
-# RIL
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-
 # Recovery
 ifeq ($(AB_OTA_UPDATER), true)
 TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab_AB.recovery.qcom
