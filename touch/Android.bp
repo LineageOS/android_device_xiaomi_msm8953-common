@@ -16,6 +16,7 @@ cc_binary {
     name: "vendor.lineage.touch@1.0-service.xiaomi_8953",
     init_rc: ["vendor.lineage.touch@1.0-service.xiaomi_8953.rc"],
     defaults: ["hidl_defaults"],
+    vintf_fragments: ["vendor.lineage.touch@1.0-service.xiaomi_8953.xml"],
     relative_install_path: "hw",
     vendor: true,
     srcs: [
