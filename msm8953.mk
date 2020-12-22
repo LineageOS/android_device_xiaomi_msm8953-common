@@ -376,14 +376,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml
 
-# VR
-PRODUCT_PACKAGES += \
-    vr.msm8953
-
-PRODUCT_PACKAGES += \
-    android.hardware.vr@1.0-impl \
-    android.hardware.vr@1.0-service
-
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
