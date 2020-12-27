@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2018-2020 The LineageOS Project
+# Copyright (C) 2017-2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -12,9 +12,9 @@ set -e
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-LINEAGE_ROOT="${MY_DIR}"/../../..
+ANDROID_ROOT="${MY_DIR}/../../.."
 
-HELPER="${LINEAGE_ROOT}/vendor/lineage/build/tools/extract_utils.sh"
+HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -22,12 +22,12 @@ fi
 source "${HELPER}"
 
 # Default to sanitizing the vendor folder before extraction
-CLEAN_VENDOR=false
+CLEAN_VENDOR=true
 
 ONLY_COMMON=
 ONLY_TARGET=
-SECTION=
 KANG=
+SECTION=
 
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
@@ -60,25 +60,17 @@ fi
 
 if [ -z "${ONLY_TARGET}" ]; then
     # Initialize the helper for common device
-    setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
+    setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
 
-    extract "${MY_DIR}/proprietary-files-qc.txt" "${SRC}" \
-            "${KANG}" --section "${SECTION}"
+    extract "${MY_DIR}/proprietary-files-qc.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 
 if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
     source "${MY_DIR}/../${DEVICE}/extract-files.sh"
-    setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
+    setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
-    extract "${MY_DIR}/../${DEVICE}/proprietary-files.txt" "${SRC}" \
-            "${KANG}" --section "${SECTION}"
+    extract "${MY_DIR}/../${DEVICE}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 
-if [ "$DEVICE" = "mido" ]; then
-    # Hax for cam configs
-    CAMERA2_SENSOR_MODULES="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmcamera2_sensor_modules.so
-    sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "$CAMERA2_SENSOR_MODULES"
-fi
-
-"$MY_DIR"/setup-makefiles.sh
+"${MY_DIR}/setup-makefiles.sh"
