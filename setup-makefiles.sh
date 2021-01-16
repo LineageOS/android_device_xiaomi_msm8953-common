@@ -25,7 +25,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "mido tissot"
+write_headers "mido tissot vince"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files-qc.txt" true
