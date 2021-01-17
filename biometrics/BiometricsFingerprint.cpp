@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
+ * Copyright (C) 2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +36,9 @@ namespace implementation {
 // Supported fingerprint HAL version
 static const uint16_t kVersion = HARDWARE_MODULE_API_VERSION(2, 1);
 
+// List of fingerprint HALs
+static const std::string kHALModules[] = {HAL_MODULES};
+
 using RequestStatus =
         android::hardware::biometrics::fingerprint::V2_1::RequestStatus;
 
@@ -42,9 +46,15 @@ BiometricsFingerprint *BiometricsFingerprint::sInstance = nullptr;
 
 BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevice(nullptr) {
     sInstance = this; // keep track of the most recent instance
-    mDevice = openHal();
-    if (!mDevice) {
-        ALOGE("Can't open HAL module");
+    for (const auto& HMI : kHALModules) {
+        mHMI = HMI;
+        mDevice = openHal();
+        if (!mDevice) {
+            ALOGE("Can't open HAL module, module ID %s", mHMI.c_str());
+        } else {
+            ALOGI("Opened fingerprint HAL, module ID %s", mHMI.c_str());
+            break;
+        }
     }
 }
 
@@ -215,33 +225,33 @@ fingerprint_device_t* BiometricsFingerprint::openHal() {
     int err;
     const hw_module_t *hw_mdl = nullptr;
     ALOGD("Opening fingerprint hal library...");
-    if (0 != (err = hw_get_module(FINGERPRINT_HARDWARE_MODULE_ID, &hw_mdl))) {
-        ALOGE("Can't open fingerprint HW Module, error: %d", err);
+    if (0 != (err = hw_get_module(mHMI.c_str(), &hw_mdl))) {
+        ALOGE("Can't open fingerprint HW Module, module ID %s, error: %d", mHMI.c_str(), err);
         return nullptr;
     }
 
     if (hw_mdl == nullptr) {
-        ALOGE("No valid fingerprint module");
+        ALOGE("No valid fingerprint module, module ID %s", mHMI.c_str());
         return nullptr;
     }
 
     fingerprint_module_t const *module =
         reinterpret_cast<const fingerprint_module_t*>(hw_mdl);
     if (module->common.methods->open == nullptr) {
-        ALOGE("No valid open method");
+        ALOGE("No valid open method, module ID %s", mHMI.c_str());
         return nullptr;
     }
 
     hw_device_t *device = nullptr;
 
     if (0 != (err = module->common.methods->open(hw_mdl, nullptr, &device))) {
-        ALOGE("Can't open fingerprint methods, error: %d", err);
+        ALOGE("Can't open fingerprint methods, module ID %s, error: %d", mHMI.c_str(), err);
         return nullptr;
     }
 
     if (kVersion != device->version) {
         // enforce version on new devices because of HIDL@2.1 translation layer
-        ALOGE("Wrong fp version. Expected %d, got %d", kVersion, device->version);
+        ALOGE("Wrong fp version, module ID %s. Expected %d, got %d", mHMI.c_str(), kVersion, device->version);
         return nullptr;
     }
 
@@ -250,7 +260,7 @@ fingerprint_device_t* BiometricsFingerprint::openHal() {
 
     if (0 != (err =
             fp_device->set_notify(fp_device, BiometricsFingerprint::notify))) {
-        ALOGE("Can't register fingerprint module callback, error: %d", err);
+        ALOGE("Can't register fingerprint module callback, module ID %s, error: %d", mHMI.c_str(), err);
         return nullptr;
     }
 
