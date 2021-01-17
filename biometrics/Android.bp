@@ -1,6 +1,26 @@
+soong_config_module_type {
+    name: "xiaomi_msm8953_biometrics_hal_cc_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "XIAOMI_MSM8953_BIOMETRICS",
+    value_variables: ["HAL_MODULES"],
+    properties: ["cflags"],
+}
+
+xiaomi_msm8953_biometrics_hal_cc_defaults {
+    name: "xiaomi_msm8953_biometrics_hal_defaults",
+    soong_config_variables: {
+        HAL_MODULES: {
+            cflags: ["-DHAL_MODULES=\"%s\""],
+        },
+    },
+}
+
 cc_binary {
     name: "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_msm8953",
-    defaults: ["hidl_defaults"],
+    defaults: [
+        "hidl_defaults",
+        "xiaomi_msm8953_biometrics_hal_defaults",
+    ],
     init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.xiaomi_msm8953.rc"],
     vintf_fragments: ["android.hardware.biometrics.fingerprint@2.1-service.xiaomi_msm8953.xml"],
     vendor: true,
