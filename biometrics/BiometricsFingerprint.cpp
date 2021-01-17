@@ -219,11 +219,11 @@ void setFpVendorProp(const char *fp_vendor) {
     property_set("ro.boot.fpsensor", fp_vendor);
 }
 
-fingerprint_device_t* getDeviceForVendor(const char *class_name) {
+fingerprint_device_t* getDeviceForVendor(const char *module_id, const char *class_name) {
     int err;
     const hw_module_t *hw_mdl = nullptr;
     ALOGD("Opening fingerprint hal library...");
-    if (0 != (err = hw_get_module_by_class(FINGERPRINT_HARDWARE_MODULE_ID, class_name, &hw_mdl))) {
+    if (0 != (err = hw_get_module_by_class(module_id, class_name, &hw_mdl))) {
         ALOGE("Can't open fingerprint HW Module, class: %s, error: %d", class_name, err);
         return nullptr;
     }
@@ -264,7 +264,7 @@ fingerprint_device_t* getFingerprintDevice()
 {
     fingerprint_device_t *fp_device;
 
-    fp_device = getDeviceForVendor("fpc");
+    fp_device = getDeviceForVendor(FINGERPRINT_HARDWARE_MODULE_ID, "fpc");
     if (fp_device == nullptr) {
         ALOGE("Failed to load fpc fingerprint module");
     } else {
@@ -272,7 +272,7 @@ fingerprint_device_t* getFingerprintDevice()
         return fp_device;
     }
 
-    fp_device = getDeviceForVendor("goodix");
+    fp_device = getDeviceForVendor("gf_" FINGERPRINT_HARDWARE_MODULE_ID, "goodix");
     if (fp_device == nullptr) {
         ALOGE("Failed to load goodix fingerprint module");
     } else {
