@@ -68,7 +68,9 @@ function blob_fixup() {
             sed -i 's/version="2.0"/version="1.0"/g' "${2}"
             ;;
         product/lib64/libdpmframework.so)
-            "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
+            for LIBSHIM_DPMFRAMEWORK in $(grep -L "libshim_dpmframework.so" "${2}"); do
+                "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
+            done
             ;;
         vendor/lib/mediadrm/libwvdrmengine.so|vendor/lib64/mediadrm/libwvdrmengine.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
