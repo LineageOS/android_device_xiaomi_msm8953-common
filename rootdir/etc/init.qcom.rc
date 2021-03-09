@@ -464,12 +464,6 @@ service atfwd /vendor/bin/ATFWD-daemon
     group system radio
     writepid /dev/cpuset/system-background/tasks
 
-service vendor.sensors /vendor/bin/sscrpcd
-    class core
-    user system
-    group system
-    writepid /dev/cpuset/system-background/tasks
-
 service vendor.sensors.qti /vendor/bin/sensors.qti
     class core
     user system
