@@ -467,13 +467,11 @@ vendor/lib/libperfgluelayer.so|5c9db256d92ddf5bce65941f2cad5eaeb4f028fd
 vendor/lib/libqti-perfd-client.so|a6ddd909d581fbb5d8caa2f1f489ec5c2c5789c1
 vendor/lib/libqti-perfd.so|855dd68c8a277c8b4787579a935a23bead62dd59
 vendor/lib/libqti-util.so|f1a4d655ee827d791447f303e59197e7271fafb5
-vendor/lib/vendor.qti.hardware.perf@2.0.so|0a08551185ac8626b832068ecb77997800050233
 vendor/lib64/libperfconfig.so|d590b6ce31c8b2158a3653c9248f5c12139d27cd
 vendor/lib64/libperfgluelayer.so|269245742c7628539e9d86a1fa4b9ba2551774e3
 vendor/lib64/libqti-perfd-client.so|94ab278009a42e75c1d62f6dfc41d85b0cc1f412
 vendor/lib64/libqti-perfd.so|f252bc957f45dd389463abe97be3f0f129da8b67
 vendor/lib64/libqti-util.so|e790b62bb198442145fcba20c2dc61d182c45a47
-vendor/lib64/vendor.qti.hardware.perf@2.0.so|3131f461ecb897f68d02df0bf1027ca0a7d07c1d
 
 # Peripheral manager - from daisy
 vendor/bin/pm-proxy|1f216a6f54e9b97c026f3f3bc4d7d441d58d90a7
