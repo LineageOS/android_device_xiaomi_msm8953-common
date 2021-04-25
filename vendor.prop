@@ -68,9 +68,6 @@ persist.vendor.cne.feature=1
 persist.vendor.dpm.feature=1
 persist.vendor.dpm.loglevel=0
 
-# Coresight
-persist.debug.coresight.config=stm-events
-
 # Display
 debug.egl.hw=0
 debug.enable.sglscale=1
