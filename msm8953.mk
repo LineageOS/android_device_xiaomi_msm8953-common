@@ -310,12 +310,12 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.msm.usb.configfs.rc \
     init.qcom.rc \
-    init.qcom.sh \
     init.qcom.usb.rc \
     init.target.rc \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
+    init.qcom.sh \
     init.qcom.bt.sh \
     init.qcom.post_boot.sh \
     move_time_data.sh \
