@@ -1,0 +1,5 @@
+service vendor.light-default /vendor/bin/hw/android.hardware.lights-service.xiaomi_msm8953
+    class hal
+    user nobody
+    group nobody
+    shutdown critical
