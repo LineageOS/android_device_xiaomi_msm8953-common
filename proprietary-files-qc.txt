@@ -254,11 +254,7 @@ vendor/lib64/libsecureui_svcsock.so|a7fdcd8001d4cdd9a30eb1ccc129324c398cc203
 vendor/lib64/libssd.so|33d717f793c2579e3bd17b5ce6534cb68c12887d
 
 # Gatekeeper - from daisy
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|bea6d682011b465a08b9085f7b5e69b965743eee
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|b04d8ae5d3851f29fd8b7c8e034fa0ef04fb96f3
 vendor/lib/hw/gatekeeper.msm8953.so|cd04140788659ae07a50081baeb3eb2e42f37028
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|4bc9f319b3a62f3d8e3e0c539b577027c263e7df
 vendor/lib64/hw/gatekeeper.msm8953.so|1086e5dcda7aa2bed7ac015f7850095f6199a1c2
 
 # GPS - from daisy
