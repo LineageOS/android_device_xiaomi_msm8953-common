@@ -63,10 +63,6 @@ ro.charger.enable_suspend=true
 # CNE
 persist.vendor.cne.feature=1
 
-# DPM
-persist.vendor.dpm.feature=1
-persist.vendor.dpm.loglevel=0
-
 # Display
 debug.egl.hw=0
 debug.enable.sglscale=1
