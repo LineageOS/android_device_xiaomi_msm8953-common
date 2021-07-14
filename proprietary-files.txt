@@ -415,6 +415,7 @@ vendor/lib64/liblistenjni.so
 vendor/lib64/liblistensoundmodel2.so
 
 # Media
+vendor/etc/seccomp_policy/mediacodec.policy
 vendor/lib/libI420colorconvert.so
 vendor/lib/libmmosal_proprietary.so
 vendor/lib/libOmxAacDec.so
