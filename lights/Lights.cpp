@@ -55,6 +55,7 @@ Lights::Lights() {
     mBacklightNode = !access(kLCDFile.c_str(), F_OK) ? kLCDFile : kLCDFile2;
     mButtonExists = !access(kButtonFile.c_str(), F_OK);
     mWhiteLed = !access((led_paths[WHITE] + "brightness").c_str(), W_OK);
+    mBreath = !access(((mWhiteLed ? led_paths[WHITE] : led_paths[RED]) + "breath").c_str(), W_OK);
 }
 
 // AIDL methods
@@ -150,7 +151,10 @@ void Lights::handleSpeakerBatteryLocked() {
 }
 
 bool Lights::setLedBreath(led_type led, uint32_t value) {
-    return WriteToFile(led_paths[led] + "breath", value);
+    if (mBreath)
+        return WriteToFile(led_paths[led] + "breath", value);
+    else
+        return WriteToFile(led_paths[led] + "blink", value);
 }
 
 bool Lights::setLedBrightness(led_type led, uint32_t value) {
