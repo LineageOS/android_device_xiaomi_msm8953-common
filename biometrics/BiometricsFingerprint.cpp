@@ -42,23 +42,10 @@ typedef struct hw_module_info {
     std::string class_name;
 } hw_module_info_t;
 
-static std::vector<hw_module_info_t> splitIntoVector(std::string list) {
-    std::stringstream list_stringstream(list);
-    std::string module_string;
-    std::size_t pos;
-    std::vector<hw_module_info_t> list_vector;
-    while (std::getline(list_stringstream, module_string, ' ')) {
-        pos = module_string.find(",");
-        list_vector.push_back(
-            hw_module_info_t {
-                .id_name = module_string.substr(0, pos),
-                .class_name = module_string.substr(pos+1)
-            }
-        );
-    }
-    return list_vector;
-}
-static const std::vector<hw_module_info_t> kHALModules = splitIntoVector(HAL_MODULES);
+static const hw_module_info_t kHALModules[] = {
+    {FINGERPRINT_HARDWARE_MODULE_ID, "fpc"},
+    {"gf_" FINGERPRINT_HARDWARE_MODULE_ID, "goodix"},
+};
 
 using RequestStatus =
         android::hardware::biometrics::fingerprint::V2_1::RequestStatus;
