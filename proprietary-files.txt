@@ -305,6 +305,14 @@ vendor/lib/vendor.qti.gnss@2.0.so|ef5e1e3718cd71a01a4ca7b06f38d56b6aca50aa
 vendor/lib/vendor.qti.gnss@2.1.so|c7eeb37d061f7978624810ccc1d1d7f25e9f95da
 vendor/lib/vendor.qti.gnss@3.0.so|e4f5a7fd2dcdf56f8d69e4d0b27e996812ebd295
 
+# GPS configs - from daisy
+vendor/etc/flp.conf|8c8642685c225fa0b715c284481018a527dae451
+vendor/etc/gps.conf|590941e5a918790d84fb37948ea4eae7ec80a811
+vendor/etc/izat.conf|2a7c10fd6a2504165665024e0dd7e58ba78f6679
+vendor/etc/lowi.conf|1e47a73803542661b9a4c42cc8dfa576ae03a9a2
+vendor/etc/sap.conf|afbcbacb367b2fcc05efcad76ef096d794e768ba
+vendor/etc/xtwifi.conf|ac2189707c0016c31846ccec73e8857d7f566605
+
 # Graphics - from daisy
 lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so|5b006423286008ba9b54b8c29e9ce2ab4b6fa14d
 lib64/libsdm-disp-apis.so:vendor/lib64/libsdm-disp-apis.so|25391818f65a4dfe3fdf0603109eacc4eedc4c13
