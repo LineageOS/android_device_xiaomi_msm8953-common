@@ -155,6 +155,9 @@ TARGET_PER_MGR_ENABLED := true
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
+# Properties
+TARGET_VENDOR_PROP += $(VENDOR_PATH)/vendor.prop
+
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
 
