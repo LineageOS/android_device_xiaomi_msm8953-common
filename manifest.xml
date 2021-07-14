@@ -501,7 +501,4 @@
             <instance>imsrtpservice</instance>
         </interface>
     </hal>
-    <sepolicy>
-        <version>0.0</version>
-    </sepolicy>
 </manifest> 
