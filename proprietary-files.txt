@@ -63,10 +63,10 @@ vendor/lib64/libtinycompress_vendor.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcvirt.so
 
-# Audio dirac
-vendor/etc/diracmobile.config
-vendor/lib/libDiracAPI_SHARED.so
-vendor/lib/soundfx/libdirac.so
+# Audio dirac - from tissot-user 9 PKQ1.180917.001 V10.0.24.0.PDHMIXM release-keys
+vendor/etc/diracmobile.config|4b12ad67107332a77c308d58065a7e0a77d90566
+vendor/lib/libDiracAPI_SHARED.so|14f268dde7e13c5721a6eefc300d21d9f9549042
+vendor/lib/soundfx/libdirac.so|b43db3b8044dc72af1b90fa82321c53c0e4fb24d
 
 # Audiosphere
 etc/permissions/audiosphere.xml
