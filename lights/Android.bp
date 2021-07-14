@@ -1,23 +1,5 @@
-soong_config_module_type {
-    name: "xiaomi_msm8953_lights_hal_cc_defaults",
-    module_type: "cc_defaults",
-    config_namespace: "XIAOMI_MSM8953_LIGHTS",
-    bool_variables: ["WHITE_LED"],
-    properties: ["cflags"],
-}
-
-xiaomi_msm8953_lights_hal_cc_defaults {
-    name: "xiaomi_msm8953_lights_hal_defaults",
-    soong_config_variables: {
-        WHITE_LED: {
-            cflags: ["-DWHITE_LED"],
-        },
-    },
-}
-
 cc_binary {
     name: "android.hardware.lights-service.xiaomi_msm8953",
-    defaults: ["xiaomi_msm8953_lights_hal_defaults"],
     relative_install_path: "hw",
     init_rc: ["lights-xiaomi_msm8953.rc"],
     vintf_fragments: ["lights-xiaomi_msm8953.xml"],

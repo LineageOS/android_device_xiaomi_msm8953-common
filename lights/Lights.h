@@ -23,6 +23,13 @@ namespace android {
 namespace hardware {
 namespace light {
 
+enum led_type {
+    RED,
+    GREEN,
+    BLUE,
+    WHITE,
+};
+
 class Lights : public BnLights {
 public:
     Lights();
@@ -31,12 +38,11 @@ public:
     ndk::ScopedAStatus getLights(std::vector<HwLight>* types) override;
 
 private:
-    ndk::ScopedAStatus setLightBacklight(const HwLightState& state);
-    ndk::ScopedAStatus setLightBattery(const HwLightState& state);
-    ndk::ScopedAStatus setLightButtons(const HwLightState& state);
-    ndk::ScopedAStatus setLightNotification(const HwLightState& state);
-    ndk::ScopedAStatus setSpeakerLightLocked(const HwLightState& state);
-    ndk::ScopedAStatus handleSpeakerBatteryLocked();
+    void setSpeakerLightLocked(const HwLightState& state);
+    void handleSpeakerBatteryLocked();
+
+    bool setLedBreath(led_type led, uint32_t value);
+    bool setLedBrightness(led_type led, uint32_t value);
 
     bool IsLit(uint32_t color);
     uint32_t RgbaToBrightness(uint32_t color);
@@ -44,7 +50,7 @@ private:
 
     std::string mBacklightNode;
     bool mButtonExists;
-    bool mLowPersistenceEnabled;
+    bool mWhiteLed;
     HwLightState mNotification;
     HwLightState mBattery;
 };
