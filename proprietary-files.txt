@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from daisy-user 10 QKQ1.191002.002 V11.0.18.0.QDLMIXM release-keys
+# All unpinned blobs below are extracted from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
 
 # ADSP
 vendor/bin/adsprpcd
