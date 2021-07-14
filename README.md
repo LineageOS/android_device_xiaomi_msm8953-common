@@ -1,4 +1,9 @@
-Copyright (C) 2017 - The LineageOS Project
+# Common device tree for Xiaomi MSM8953 devices
 
-Common device tree for Xiaomi MSM8953 based devices
-==============
+```
+#
+# Copyright (C) 2017-2021 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+```
