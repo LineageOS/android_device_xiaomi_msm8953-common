@@ -506,8 +506,10 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 -sbin/charger:bin/chargeonlymode
 
 # QMI
+etc/permissions/privapp-permissions-qti.xml
 etc/permissions/qti_libpermissions.xml
 etc/permissions/qti_permissions.xml
+etc/sysconfig/qti_whitelist.xml
 vendor/bin/irsc_util
 vendor/lib/libdiag.so
 vendor/lib/libdsutils.so
@@ -547,6 +549,7 @@ vendor/lib64/libqmi_encdec.so
 -product/app/QtiTelephonyService/QtiTelephonyService.apk
 product/etc/permissions/embms.xml
 product/etc/permissions/qcrilhook.xml
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 product/etc/permissions/telephonyservice.xml
 product/framework/embmslibrary.jar
 product/framework/qcrilhook.jar
