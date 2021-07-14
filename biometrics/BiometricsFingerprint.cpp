@@ -54,16 +54,14 @@ BiometricsFingerprint *BiometricsFingerprint::sInstance = nullptr;
 
 BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevice(nullptr) {
     sInstance = this; // keep track of the most recent instance
-    const char *id_name;
-    const char *class_name;
     for (const auto& HMI : kHALModules) {
-        id_name = HMI.id_name.c_str();
-        class_name = HMI.class_name.c_str();
-        mDevice = openHal(id_name, class_name);
+        mDevice = openHal(HMI.id_name.c_str(), HMI.class_name.c_str());
         if (!mDevice) {
-            ALOGE("Can't open HAL module, module ID %s, class name %s", id_name, class_name);
+            ALOGE("Can't open HAL module, module ID %s, class name %s",
+                    HMI.id_name.c_str(), HMI.class_name.c_str());
         } else {
-            ALOGI("Opened fingerprint HAL, module ID %s, class name %s", id_name, class_name);
+            ALOGI("Opened fingerprint HAL, module ID %s, class name %s",
+                    HMI.id_name.c_str(), HMI.class_name.c_str());
             break;
         }
     }
