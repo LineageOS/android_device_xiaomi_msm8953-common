@@ -19,8 +19,6 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
-TARGET_BOARD_PLATFORM := msm8953
-
 # Build
 BUILD_BROKEN_DUP_RULES := true
 
@@ -139,11 +137,12 @@ TARGET_PER_MGR_ENABLED := true
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := msm8953
+
 # Properties
 TARGET_VENDOR_PROP += $(VENDOR_PATH)/vendor.prop
-
-# Qualcomm
-BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
 ifeq ($(AB_OTA_UPDATER), true)
