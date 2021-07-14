@@ -51,6 +51,7 @@ private:
     std::string mBacklightNode;
     bool mButtonExists;
     bool mWhiteLed;
+    bool mBreath;
     HwLightState mNotification;
     HwLightState mBattery;
 };
