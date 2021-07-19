@@ -709,6 +709,7 @@ vendor/lib64/sensors.ssc.so
 vendor/bin/thermal-engine
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
+vendor/lib64/libthermalfeature.so
 vendor/lib64/libthermalioctl.so
 
 # Time services
