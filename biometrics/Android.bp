@@ -1,13 +1,11 @@
 cc_defaults {
     name: "fingerprint_service_xiaomi_msm8953_defaults",
     defaults: ["hidl_defaults"],
-    vendor: true,
     relative_install_path: "hw",
     srcs: [
         "BiometricsFingerprint.cpp",
         "service.cpp",
     ],
-
     shared_libs: [
         "libcutils",
         "liblog",
@@ -16,7 +14,7 @@ cc_defaults {
         "libutils",
         "android.hardware.biometrics.fingerprint@2.1",
     ],
-
+    vendor: true,
 }
 
 cc_binary {
