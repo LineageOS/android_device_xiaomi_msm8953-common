@@ -253,10 +253,6 @@ vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
 
-# Gatekeeper
-vendor/lib/hw/gatekeeper.msm8953.so
-vendor/lib64/hw/gatekeeper.msm8953.so
-
 # GPS
 vendor/bin/garden_app
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti
@@ -383,10 +379,6 @@ vendor/firmware/a530_pm4.fw
 
 # Ipacm
 vendor/bin/ipacm-diag
-
-# Keystore
-vendor/lib/hw/keystore.msm8953.so
-vendor/lib64/hw/keystore.msm8953.so
 
 # Latency
 product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
