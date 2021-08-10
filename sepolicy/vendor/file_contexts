@@ -47,7 +47,7 @@
 /data/vendor/location/xtra/socket_hal_xtra    u:object_r:location_socket:s0
 
 # Rild
-/(vendor|system/vendor)/radio/qcril_database/qcril.db			u:object_r:rild_file:s0
+/(vendor|system/vendor)/radio/qcril_database/qcril\.db			u:object_r:rild_file:s0
 
 # Shell Script
 /(vendor|system/vendor)/bin/init\.goodix\.sh	u:object_r:init_fingerprint_exec:s0
