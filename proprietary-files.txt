@@ -63,10 +63,10 @@ vendor/lib64/libaudioparsers.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libtinycompress_vendor.so
 
-# Audio dirac - from tissot-user 9 PKQ1.180917.001 V10.0.24.0.PDHMIXM release-keys
-vendor/etc/diracmobile.config|4b12ad67107332a77c308d58065a7e0a77d90566
-vendor/lib/soundfx/libdirac.so|b43db3b8044dc72af1b90fa82321c53c0e4fb24d
-vendor/lib/libDiracAPI_SHARED.so|14f268dde7e13c5721a6eefc300d21d9f9549042
+# Audio dirac - from mido-user 7.0 NRD90M V11.0.2.0.NCFMIXM release-keys
+vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
+lib/soundfx/libdirac.so:vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
+lib/libDiracAPI_SHARED.so:vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
 
 # Audiosphere
 etc/permissions/audiosphere.xml
