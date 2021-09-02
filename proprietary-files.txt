@@ -734,9 +734,6 @@ vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
-# Wi-Fi
-vendor/bin/wcnss_service
-
 # Wi-Fi Display
 bin/wfdservice
 etc/init/wfdservice.rc
