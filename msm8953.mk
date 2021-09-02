@@ -66,11 +66,15 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
-    android.hardware.soundtrigger@2.1-impl \
+    android.hardware.soundtrigger@2.1-impl
+
+PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.primary.msm8953 \
     audio.r_submix.default \
-    audio.usb.default \
+    audio.usb.default
+
+PRODUCT_PACKAGES += \
     libaudiopreprocessing \
     libaudioroute \
     libaacwrapper \
@@ -105,29 +109,39 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service \
-    libstdc++.vendor \
+    android.hardware.camera.provider@2.4-service
+
+PRODUCT_PACKAGES += \
+    libstdc++.vendor
+
+PRODUCT_PACKAGES += \
     Snap
 
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.mapper@2.0-impl-2.1 \
+	gralloc.msm8953
+
+PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.graphics.mapper@2.0-impl-2.1 \
+    hwcomposer.msm8953
+
+PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    copybit.msm8953 \
-    gralloc.msm8953 \
-    hwcomposer.msm8953 \
-    memtrack.msm8953 \
+    memtrack.msm8953
+
+PRODUCT_PACKAGES += \
     libdisplayconfig \
+    liboverlay \
     libqdMetaData.system \
     libgenlock \
     libtinyxml
@@ -146,10 +160,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
-
-# GPS
-PRODUCT_PACKAGES += \
-    libwifi-hal-ctrl
 
 # Health
 PRODUCT_PACKAGES += \
@@ -175,10 +185,6 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    android.hardware.camera.device@3.6 \
-    android.hardware.camera.provider@2.6 \
-    ims-ext-common \
-    ims_ext_common.xml \
     vendor.qti.hardware.camera.device@1.0
 
 # HW crypto
@@ -196,7 +202,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
-# IPA Manager
+# IPACM
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
@@ -251,12 +257,11 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson
-
-# QTI
-PRODUCT_PACKAGES += \
+    libjson \
     libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor
+    libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti \
+    libvndfwk_detect_jni.qti.vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -272,24 +277,15 @@ PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
     init.qcom.post_boot.sh
 
-# RenderScript HAL
+# RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0 \
     librmnetctl \
     libcnefeatureconfig \
-    libxml2 \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+    libxml2
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -300,6 +296,19 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Telephony
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # Thermal
 PRODUCT_COPY_FILES += \
@@ -334,6 +343,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     libcld80211 \
     libQWiFiSoftApCfg \
+    libwifi-hal-ctrl \
     libwpa_client \
     hostapd \
     dhcpcd.conf \
