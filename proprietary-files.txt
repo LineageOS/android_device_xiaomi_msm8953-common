@@ -729,6 +729,7 @@ vendor/lib64/vendor.qti.voiceprint@1.0.so
 # Widevine
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.2-service.widevine.xml
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
