@@ -286,8 +286,11 @@
 
         </module>
 
-        <!-- A2dp Audio HAL -->
-        <xi:include href="/vendor/etc/a2dp_audio_policy_configuration.xml"/>
+        <!-- A2dp Input Audio HAL -->
+        <xi:include href="/vendor/etc/a2dp_in_audio_policy_configuration.xml"/>
+
+        <!-- Bluetooth Audio HAL -->
+        <xi:include href="/vendor/etc/bluetooth_audio_policy_configuration.xml"/>
 
         <!-- Usb Audio HAL -->
         <xi:include href="/vendor/etc/usb_audio_policy_configuration.xml"/>
