@@ -1,18 +1,11 @@
-# Boot reason
-type proc_boot_reason, fs_type, proc_type;
-
-# Camera
 type camera_socket, file_type, data_file_type;
 
-# Fingerprint
-type fingerprint_data_file, file_type, core_data_file_type, data_file_type;
-
-# Rild
-type rild_file, file_type, vendor_file_type;
-
-# Rmt
 type debugfs_rmt, debugfs_type, fs_type;
 
-# Touchscreen
+type fingerprint_data_file, file_type, core_data_file_type, data_file_type;
+
+type proc_boot_reason, fs_type, proc_type;
+
 type proc_touchpanel, fs_type, sysfs_type, proc_type;
 
+type rild_file, file_type, vendor_file_type;
