@@ -13,15 +13,15 @@
 # Executables
 /system/bin/chargeonlymode			u:object_r:charger_exec:s0
 
-# Fpc Fingerprint
-/data/fpc(/.*)?					u:object_r:fpc_data_file:s0
-/dev/socket/fpce(/.*)?				u:object_r:fpce_socket:s0
-/sys/devices(/platform)?/soc/soc:fpc1020(/.*)?		u:object_r:fpc_sysfs:s0
+# Fingerprint data
+/data/fpc(/.*)?					                    u:object_r:fingerprint_data_file:s0
+/data/gf_data(/.*)?                                 u:object_r:fingerprint_data_file:s0
+/persist/data/gxfp(/.*)?                            u:object_r:fingerprint_data_file:s0
+/dev/socket/fpce(/.*)?                              u:object_r:fingerprint_data_file:s0
 
-# Goodix Fingerprint
-/dev/goodix_fp					u:object_r:gx_fpd_device:s0
-/data/gf_data(/.*)?                             u:object_r:gx_fpd_data_file:s0
-/persist/data/gxfp(/.*)?			u:object_r:gx_fpd_data_file:s0
+# Fingerprint devices
+/dev/goodix_fp                                      u:object_r:fingerprint_device:s0
+/sys/devices(/platform)?/soc/soc:fpc1020(/.*)?      u:object_r:fingerprint_device:s0
 
 # Firmware
 /firmware                                                     u:object_r:firmware_file:s0
