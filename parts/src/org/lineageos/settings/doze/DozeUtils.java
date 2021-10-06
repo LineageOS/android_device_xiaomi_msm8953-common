@@ -36,6 +36,7 @@ public final class DozeUtils {
 
     private static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
 
+    protected static final String DOZE_ENABLE = "doze_enable";
     protected static final String ALWAYS_ON_DISPLAY = "always_on_display";
 
     protected static final String CATEG_PICKUP_SENSOR = "pickup_sensor";
