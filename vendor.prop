@@ -182,5 +182,8 @@ ro.soc.model=SDM450
 # Time Services
 persist.timed.enable=true
 
+# Watchdog
+ro.hw_timeout_multiplier=3
+
 # Zygote
 zygote.critical_window.minute=10
