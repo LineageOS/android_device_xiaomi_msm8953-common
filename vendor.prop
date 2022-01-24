@@ -41,9 +41,6 @@ qcom.bluetooth.soc=smd
 ro.bluetooth.hfp.ver=1.7
 ro.qualcomm.bt.hci_transport=smd
 
-# Bpf
-ro.kernel.ebpf.supported=1
-
 # Camera
 camera.display.lmax=1280x720
 camera.display.umax=1920x1080
