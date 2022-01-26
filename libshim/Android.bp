@@ -16,7 +16,7 @@
 cc_library {
     name: "libshim_dpmframework",
     srcs: [
-        "strdup16to8.cpp",
-        "strdup8to16.cpp",
+        "dpm/strdup16to8.cpp",
+        "dpm/strdup8to16.cpp",
     ],
 }
