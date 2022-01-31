@@ -351,6 +351,9 @@ firmware_directories /vendor/firmware_mnt/image/
 #Memory Offline
 /sys/devices/system/memory/memory* state    0660 system system
 
+#KGSL
+/sys/class/kgsl/kgsl-3d0    perfcounter              0660    root    shell
+
 # sys-fs display
 /sys/class/graphics/fb*     hpd                      0664    system  graphics
 /sys/class/graphics/fb*     res_info                 0664    system  graphics
