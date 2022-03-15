@@ -130,12 +130,6 @@
         <fqname>@2.1::IUceService/com.qualcomm.qti.uceservice</fqname>
     </hal>
     <hal format="hidl">
-        <name>com.qualcomm.qti.wifidisplayhal</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IDSManager/wifidisplaydshal</fqname>
-        <fqname>@1.0::IHDCPSession/wifidisplayhdcphal</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.display.color</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IDisplayColor/default</fqname>
