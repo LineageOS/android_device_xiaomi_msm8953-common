@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5722ea55_51d681f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-05-27T16:47:47Z",
+      "side": 1,
+      "message": "Check if daisy is shipping this XML, and use that version\nIf it\u0027s not, abandon this commit",
+      "revId": "d818c193310952f54e120b61037225c84603c35d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
