@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e11c75e1_2d428e63",
+        "filename": "extract-files.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-05-27T10:33:34Z",
+      "side": 1,
+      "message": "you need to change this to your defined name, the LIBSHIM_DPMFRAMEWORK so that it only comes up with a blob name if that dependency doesn\u0027t exist\n\nPlease review how I have it on an original commit like here\nhttps://github.com/LineageOS/android_device_motorola_nash/commit/6e0ae6d6d8b889dde0435f292835714894e52f7c",
+      "range": {
+        "startLine": 72,
+        "startChar": 71,
+        "endLine": 72,
+        "endChar": 74
+      },
+      "revId": "78fd4aed782fb82d29c54ad176754349c134a2f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
