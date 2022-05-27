@@ -16,6 +16,23 @@
       "message": "why you need this",
       "revId": "7de26fd7e3dca10e3fec0a5521ae867b7bcdc270",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "58565b07_0c9b3f0c",
+        "filename": "setup-makefiles.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-05-27T14:26:03Z",
+      "side": 1,
+      "message": "https://github.com/LineageOS/android_device_xiaomi_sdm660-common/blob/lineage-19.1/setup-makefiles.sh#L51",
+      "revId": "7de26fd7e3dca10e3fec0a5521ae867b7bcdc270",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
