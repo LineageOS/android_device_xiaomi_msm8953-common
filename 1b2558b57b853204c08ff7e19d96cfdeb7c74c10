@@ -16,6 +16,24 @@
       "message": "tabs -\u003e 4 spaces",
       "revId": "1b2558b57b853204c08ff7e19d96cfdeb7c74c10",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "39f47f2e_0cabe125",
+        "filename": "libshim/ims/libgui.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-05-27T20:24:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fead5636_5f666105",
+      "revId": "1b2558b57b853204c08ff7e19d96cfdeb7c74c10",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
