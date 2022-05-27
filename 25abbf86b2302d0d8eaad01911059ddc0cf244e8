@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9cc4cd48_bb8ac7c7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-05-27T20:27:10Z",
+      "side": 1,
+      "message": "Label the folders instead of allowing it to access vendor_file",
+      "revId": "25abbf86b2302d0d8eaad01911059ddc0cf244e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
