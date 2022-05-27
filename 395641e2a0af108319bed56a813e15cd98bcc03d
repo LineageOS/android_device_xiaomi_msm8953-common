@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d1a373a_212f1330",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 23878
+      },
+      "writtenOn": "2022-05-27T10:34:50Z",
+      "side": 1,
+      "message": "Unless you\u0027re fighting size constraints I would leave this blob,\nIt was later discovered camera app needed this for a specific capture mode and added back in I89aa823bac2a2fa4b92d324cc0dbcdc6811468de",
+      "revId": "395641e2a0af108319bed56a813e15cd98bcc03d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
