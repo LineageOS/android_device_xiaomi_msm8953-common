@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4554b56a_96a7980c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28232
+      },
+      "writtenOn": "2022-05-27T18:06:12Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_device_motorola_sdm632-common/+/328070",
+      "revId": "3f3ce463064f05809527ef618544bbf3572ef7cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1030b896_98923a88",
