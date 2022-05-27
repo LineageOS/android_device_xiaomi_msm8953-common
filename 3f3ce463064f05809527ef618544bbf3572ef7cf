@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1030b896_98923a88",
+        "filename": "vendor.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 170,
+      "author": {
+        "id": 28232
+      },
+      "writtenOn": "2022-05-27T18:05:36Z",
+      "side": 1,
+      "message": "Should be SDM450 if you care about xTS. This causes a failure in OsTestCases. I have tried all combinations but only Qualcomm|SDM450 works.\n\nhttps://source.codeaurora.org/quic/la/platform/vendor/qcom/titanium_64/commit/?h\u003dLA.UM.10.6.2.r1-01200-89xx.0\u0026id\u003dbb8b71dfc97bdc0e6304a45e73205a3484ce4925",
+      "range": {
+        "startLine": 170,
+        "startChar": 13,
+        "endLine": 170,
+        "endChar": 20
+      },
+      "revId": "3f3ce463064f05809527ef618544bbf3572ef7cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
