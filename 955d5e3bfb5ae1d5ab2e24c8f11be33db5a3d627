@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "afae231e_2e60366a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-05-27T16:44:42Z",
+      "side": 1,
+      "message": "msm8953 is not old enough to need this",
+      "revId": "955d5e3bfb5ae1d5ab2e24c8f11be33db5a3d627",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
