@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9ba8bd3d_5fef5752",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2022-05-28T01:28:28Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_device_essential_mata/+/328978/3\n\nI think this is better",
+      "revId": "bee15a4d36144075d66452866d2aa2d102500807",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
