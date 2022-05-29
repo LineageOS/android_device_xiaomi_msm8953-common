@@ -34,6 +34,24 @@
       "parentUuid": "5722ea55_51d681f2",
       "revId": "d818c193310952f54e120b61037225c84603c35d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e4945289_05bceed2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-05-29T18:05:27Z",
+      "side": 1,
+      "message": "Just checked daisy dump, it doesn\u0027t have these, and qcom didn\u0027t run these tests on our graphics stack\nEither update graphics stack from an Android 11 device (and make sure it has these XML permissions) or drop this commit",
+      "parentUuid": "3966517e_d3da8172",
+      "revId": "d818c193310952f54e120b61037225c84603c35d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
