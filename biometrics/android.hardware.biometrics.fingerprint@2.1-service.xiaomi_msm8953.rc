@@ -6,3 +6,7 @@ service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.
     user system
     group system input uhid
     task_profiles ServiceCapacityLow
+
+on post-fs-data
+    mkdir /data/vendor/goodix 0770 system system
+    mkdir /data/vendor/fpc 0770 system system
