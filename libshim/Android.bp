@@ -13,14 +13,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-cc_library {
-    name: "libshim_dpmframework",
-    srcs: [
-        "dpm/strdup16to8.cpp",
-        "dpm/strdup8to16.cpp",
-    ],
-}
-
 cc_library_shared {
     name: "libshim_imsvideocodec",
     shared_libs: [
