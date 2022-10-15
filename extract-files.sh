@@ -81,14 +81,10 @@ function blob_fixup() {
             sed -i 's|/product/framework/qcrilhook.jar|/system_ext/framework/qcrilhook.jar|g' "${2}"
             ;;
         system_ext/lib64/libdpmframework.so)
-            for  LIBCUTILS_SHIM in $(grep -L "libcutils_shim.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libcutils_shim.so" "$LIBCUTILS_SHIM"
-            done
+            grep -q "libcutils_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcutils_shim.so" "${2}"
             ;;
         system_ext/lib64/lib-imsvideocodec.so)
-            for LIBGUI_SHIM in $(grep -L "libgui_shim.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libgui_shim.so" "$LIBGUI_SHIM"
-            done
+            grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
             ;;
         vendor/lib/mediadrm/libwvdrmengine.so|vendor/lib64/mediadrm/libwvdrmengine.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
