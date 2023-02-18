@@ -8,6 +8,8 @@ LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 ifeq ($(AB_OTA_UPDATER), true)
 LOCAL_SRC_FILES    := etc/fstab_AB.qcom
+else ifeq ($(TARGET_IS_LEGACY), true)
+LOCAL_SRC_FILES    := etc/fstab_legacy.qcom
 else
 LOCAL_SRC_FILES    := etc/fstab.qcom
 endif
