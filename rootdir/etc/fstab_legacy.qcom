@@ -7,7 +7,7 @@
 /dev/block/bootdevice/by-name/recovery		/recovery		emmc	defaults							defaults
 
 /dev/block/bootdevice/by-name/system		/system			ext4	ro								wait,recoveryonly
-/dev/block/bootdevice/by-name/vendor		/vendor			ext4	ro								wait,recoveryonly
+/dev/block/bootdevice/by-name/cust		/vendor			ext4	ro								wait,recoveryonly
 /dev/block/bootdevice/by-name/userdata		/data			f2fs	nosuid,nodev,noatime,discard,fsync_mode=nobarrier		wait,check,encryptable=footer,quota
 /dev/block/bootdevice/by-name/userdata		/data			ext4	nosuid,nodev,noatime,noauto_da_alloc				wait,check,encryptable=footer,quota,formattable
 /dev/block/bootdevice/by-name/cache		/cache			f2fs	nosuid,nodev,noatime,inline_xattr,flush_merge,data_flush	wait,formattable,check
@@ -18,10 +18,5 @@
 /dev/block/bootdevice/by-name/misc		/misc			emmc	defaults							defaults
 /dev/block/bootdevice/by-name/config		/frp			emmc	defaults							defaults
 
-# msm-3.18
-/devices/soc/7864900.sdhci/mmc_host*		auto			auto	defaults							wait,voldmanaged=sdcard1:auto,noemulatedsd,encryptable=userdata
-/devices/soc/7000000.ssusb/7000000.dwc3/xhci-hcd.0.auto*     auto	auto    defaults							wait,voldmanaged=usb:auto
-
-# msm-4.9
 /devices/platform/soc/7864900.sdhci/mmc_host*		auto			auto	defaults							wait,voldmanaged=sdcard1:auto,noemulatedsd,encryptable=userdata
 /devices/platform/soc/7000000.ssusb/7000000.dwc3/xhci-hcd.0.auto*     auto	auto    defaults							wait,voldmanaged=usb:auto
