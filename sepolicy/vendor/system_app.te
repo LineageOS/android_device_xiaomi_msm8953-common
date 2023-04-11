@@ -1,0 +1,1 @@
+allow system_app fm_radio_device:chr_file r_file_perms;
