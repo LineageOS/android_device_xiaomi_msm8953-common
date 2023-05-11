@@ -384,6 +384,9 @@ firmware_directories /vendor/firmware_mnt/image/
 
 /sys/devices/virtual/hdcp/msm_hdcp  min_level_change 0664    system  graphics
 
+# socinfo
+/sys/devices/soc0           serial_number            0000    root    root
+
 # lirc
 /dev/lirc0                0660   system     system
 /dev/peel_ir              0660   system     system
