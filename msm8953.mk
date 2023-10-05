@@ -115,7 +115,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service
 
 PRODUCT_PACKAGES += \
-    libstdc++.vendor
+    libstdc++_vendor
 
 # Display
 PRODUCT_PACKAGES += \
