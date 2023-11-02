@@ -149,9 +149,11 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor
 
 # Encryption
+ifneq ($(AB_OTA_UPDATER), true)
 ifeq ($(TARGET_IS_LEGACY),true)
 PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.volume.contents_mode=aes-256-xts
+endif
 endif
 
 # FM
